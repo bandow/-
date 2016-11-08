@@ -16,12 +16,16 @@ requirejs(['jquery','swiper'],function($,swiper){
         	$(this).on("click",function(){
                 $(this).addClass("active").siblings().removeClass("active");
                 if(index==0){
-                  	$(".line").css("left","5%");
+                  	$(".line").css("left","7%");
                 }else{
-                  	$(".line").css("left","55%");
+                  	$(".line").css("left","57%");
                 }
                 $(".login-list .form").eq($(this).index()).show().siblings().hide();
         	});
-        });    
+        }); 
+        //icon-list  图标列表
+        $(".icon-list .list-text").on("mousemove",function(){
+             $(this).addClass("active").siblings().removeClass("active");
+        }); 
     });
 });
