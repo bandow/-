@@ -314,6 +314,272 @@
 	padding:20px 0;
 	width:100%;
 	height: auto;
-    overflow: hidden;
 	background:url("../images/live_telecast_bg.png") no-repeat;
+	.live-top{
+		width:100%;
+		margin-top:-80px;
+		height: auto;
+		overflow:hidden;
+		ul{
+			width:374px;
+		    height:60px;
+		    margin:0 auto;
+		    li{
+		    	float:left;
+		    	width:186px;
+		    	font:24px/60px "Microsoft YaHei","Helvetica Neue";
+		    	text-align:center;
+		    	cursor:pointer;
+		    }
+		    .live-telecast-list{
+		    	i{
+		    		width:34px;
+		    		height:32px;
+		    		display:inline-block;
+		    		background:url("../images/wasp.png") -175px 0 no-repeat;
+		    		vertical-align: middle;
+		    		margin-right: 10px;
+		    	}
+		    }
+		    .video{
+		    	i{
+		    		width:38px;
+		    		height:36px;
+		    		display:inline-block;
+		    		background:url("../images/wasp.png") -265px 0 no-repeat;
+		    		vertical-align: middle;
+		    		margin-right: 10px;
+		    	}
+		    }
+		    .active{
+		    	border:1px solid #747474;
+		    	border-bottom:0;
+		    	font:bold 30px/60px "Microsoft YaHei","Helvetica Neue";
+		    }
+		}
+	}
+	.live-text{
+		.live-text-list{
+			display:none;
+		}
+		.title-info{
+			padding:10px 0;
+			width:100%;
+	    	font:12px/2 "Microsoft YaHei","Helvetica Neue";
+	    	color:#fff;
+	    	text-align:center;
+		}
+		.text-ul{
+			width:100%;
+			height: auto;
+			ul{
+				width:918px;
+				height: auto;
+			    overflow:hidden;
+				margin:0 auto;
+				li{
+					float:left;
+					width:102px;
+					color:#fff;
+					font:18px/2 "Microsoft YaHei","Helvetica Neue";
+					text-align:center;
+					cursor:pointer;
+				}
+				.active{
+					font-weight:bold;
+				}
+			}
+			.live-text-list-container{
+				width:1244px;
+				margin-left:-40px;
+				height: auto;
+			    overflow:hidden;
+			    background:rgba(255,255,255,.5);
+			    .list{
+			    	padding:20px;
+			    	height: auto;
+			        overflow:hidden;
+			        display:none;
+			    	.big-img-list{
+			    		position:relative;
+			    		float:left;
+			    		width:240px;
+			    		height:183px;
+			    		text-align:center;
+			    		vertical-align: middle;
+			    		font-size:0;
+			    		cursor:pointer;
+			    		img{
+			    			min-height:100%;
+			    			min-weight:100%;
+			    			vertical-align: middle;
+			    		}
+			    		.layer-list{
+			    			position:absolute;
+			    			top:0;
+			    			right:0;
+			    			bottom:0;
+			    			left:0;
+			    			display:none;
+			    			background:rgba(0,0,0,.8);
+			    			h3{
+			    				padding-top:30px;
+			    				font:18px/2 "Microsoft YaHei","Helvetica Neue";
+			    				color:#fff;
+			    			}
+			    			p{
+			    				padding:0 50px;
+			    				font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+			    				color:#fff;
+			    				text-align:left;
+			    				span{
+			    					color:#ffb800;
+			    				}
+			    			}
+			    			a{
+			    				margin:10px auto 0;
+			    				display:block;
+			    				width:36%;
+			    				background-color:#ffb800;
+			    				font:14px/2 "Microsoft YaHei","Helvetica Neue";
+			    				text-decoration:none;
+			    				color:#fff;
+			    			}
+			    		}
+			    	}
+			    	.active{
+			    		.layer-list{
+			    			display:block;
+			    		}
+			    	}
+			    	.small-img-list{
+			    		float:left;
+			    		width:133px;
+			    		height:102px;
+			    		text-align:center;
+			    		vertical-align: middle;
+			    		font-size:0;
+			    		img{
+			    			min-height:100%;
+			    			min-weight:100%;
+			    			vertical-align: middle;
+			    		}
+			    	}
+			    }
+			}
+		}
+	}	
+}
+.title{
+	position:relative;
+	height: auto;
+	border-bottom:2px solid #9b9b9b;
+	h3{
+		position:absolute;
+		left:40px;
+		top:-35px;
+		width:230px;
+		height:70px;
+		font:bold 30px/70px "Microsoft YaHei","Helvetica Neue";
+		color:#000;
+		border:2px solid #9b9b9b;
+		border-bottom:2px solid #fff;
+		text-align:center;
+	}
+	p{
+		font:14px/2.4 "Microsoft YaHei","Helvetica Neue";
+		margin-left:280px;
+		color:#6f6f6f;
+	}
+}
+.WeChat-title{
+	i{
+		width:42px;
+		height:31px;
+		background:url("../images/wasp.png") -360px 0 no-repeat;
+		display:inline-block;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
+.WeChat-promotion{
+	width:100%;
+	height:auto;
+	padding:70px 0 40px 0;
+	background-color:#fff;
+	.WeChat-nav{
+		width:918px;
+		height: auto;
+	    overflow:hidden;
+		margin:20px auto;
+		li{
+			float:left;
+			width:102px;
+			color:#000;
+			font:18px/2 "Microsoft YaHei","Helvetica Neue";
+			text-align:center;
+			cursor:pointer;
+		}
+		.active{
+			font-weight:bold;
+		}
+	}
+	.WeChat-text-all{
+		.WeChat-text-list{
+			display:none;
+			.list-top{
+				padding:0 20px;
+				li{
+					float:left;
+                    width:33.33333%;
+                    .name{
+                    	height: auto;
+	                    overflow:hidden;
+                    	img{
+                    		float:left;
+                            width:90px;
+                            height:90px;
+                    	}
+                    	.text{
+                            margin-left:100px;
+                            h3{
+                                font:bold 16px/1.5 "Microsoft YaHei","Helvetica Neue";
+                            }
+                            h4{
+                                font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+                            }
+                            .text-num{
+                            	margin-top:10px;
+                            	dd{
+                            		float:left;
+                            		margin-right:10px;
+                            		width:50px;
+                            		p{
+                            			font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+                            			color:#242424;
+                            			text-align:center;
+                            		}
+                            		.num{
+                        				color:#fa8615;
+                        			}
+                            	}
+                            }
+                    	}
+                    }
+                    
+                    a{
+                    	margin:20px auto 0;
+                    	display:block;
+                    	width:86px;
+                    	height:30px;
+                        background-color:#ffbe17;
+                        font:13px/30px "Microsoft YaHei","Helvetica Neue";
+                        color:#000;
+                        text-align:center;
+                        text-decoration:none;
+                    }
+				}
+			}
+		}
+	}
 }
