@@ -310,7 +310,7 @@
 	}
 }
 .live-telecast{
-	margin-top:30px;
+	margin-top:70px;
 	padding:20px 0;
 	width:100%;
 	height: auto;
@@ -1333,4 +1333,113 @@
     		}
     	}
     }
+}
+.back-top{
+	position:fixed;
+	top:300px;
+	right:50px;
+	z-index:2;
+	background:rgba(249,185,10,.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7ff9b90a,endColorstr=#7ff9b90a); 
+	.qq{
+		 margin:5px 10px 0;
+		 padding-bottom:50px;
+	     overflow:hidden;
+         width:29px;
+         height:34px;
+         display:block;
+         background-image:url("../images/wasp.png");
+	     background-repeat: no-repeat;
+	     background-position:-768px 0;
+	     border-bottom:1px solid #fff;
+	}
+	.top{
+		 margin:5px 5px 0;
+		 width:40px;
+         height:30px;
+         display:block;
+		 background-image:url("../images/wasp.png");
+	     background-repeat: no-repeat;
+	     background-position:-763px -50px;
+	}
+}
+
+//WeChat_promotion
+.WeChat-text-list{
+	display:none;
+	.promotion{
+		margin-top:20px;
+		height:auto;
+		overflow:hidden;
+		width:100%;
+		li{
+			float:left;
+			width:198px;
+			height:auto;
+			border:1px solid #ffc100;
+			text-align:center;
+			margin:20px 21px;
+			padding: 10px 0;
+			h3{
+				font:bold 16px/1.5 "Microsoft YaHei","Helvetica Neue";
+				color:#515151;
+			}
+			.text-num{
+				padding:0 5px;
+	        	margin-top:10px;
+	        	height:auto;
+		        overflow:hidden;
+	        	dd{
+	        		float:left;
+	        		width:60px;
+	        		p{
+	        			font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+	        			color:#242424;
+	        			text-align:center;
+	        		}
+	        		.num{
+	    				color:#fa8615;
+	    			}
+	        	}
+	        }
+	        a{
+	        	margin:20px auto 0;
+	        	display:block;
+	        	width:86px;
+	            border:1px solid #ffbe17;
+	            font:13px/1.5 "Microsoft YaHei","Helvetica Neue";
+	            color:#ffbe17;
+	            text-align:center;
+	            text-decoration:none;
+	        }
+		}
+	}
+}
+.bee-index{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	padding:70px 0 40px 0;
+	background-color:#efefef;
+	.bee-index-title{
+		h3{
+			width:300px;
+			border-bottom: 2px solid #efefef;
+		}
+		p{
+			margin-left:380px;
+		}
+		i{
+			width:42px;
+			height:31px;
+			background:url("../images/wasp.png") -360px 0 no-repeat;
+			display:inline-block;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+	}
+	table{
+		margin:20px 0;
+		text-align:center;
+	}
 }

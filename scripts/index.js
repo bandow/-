@@ -216,5 +216,8 @@ $(function(){
         $(this).addClass("active").siblings().removeClass("active");
         $(".successful-text-all .successful-text-list").eq($(this).index()).show().siblings().hide();
     }); 
-	
+	//backtop
+    $(".back-top .top").bind("click",function(){
+        $('html,body').animate({scrollTop: '0px'}, 800);
+    }); 
 });

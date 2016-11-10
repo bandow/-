@@ -88,7 +88,55 @@ table {
   overflow: hidden;
   background-color: #282828; }
   .footer .footer-top {
+    height: auto;
+    overflow: hidden;
     border-bottom: 1px solid #666; }
+    .footer .footer-top img {
+      float: left;
+      margin-left: 100px; }
+    .footer .footer-top .right {
+      margin: 30px 0 10px 220px; }
+    .footer .footer-top dl {
+      margin: 0 auto;
+      height: auto;
+      overflow: hidden;
+      padding-bottom: 20px; }
+      .footer .footer-top dl dt {
+        float: left;
+        color: #666;
+        font: 14px/1.2 "Microsoft YaHei","Helvetica Neue"; }
+      .footer .footer-top dl dd {
+        float: left;
+        margin: 0 10px; }
+      .footer .footer-top dl a {
+        text-decoration: none;
+        color: #666;
+        font: 14px/1.2 "Microsoft YaHei","Helvetica Neue"; }
+    .footer .footer-top ul {
+      margin: 0 auto;
+      height: auto;
+      overflow: hidden;
+      padding-bottom: 20px; }
+      .footer .footer-top ul li {
+        float: left;
+        margin: 0 10px; }
+      .footer .footer-top ul a {
+        text-decoration: none;
+        color: #666;
+        font: 14px/1.2 "Microsoft YaHei","Helvetica Neue"; }
+  .footer .footer-bottom {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 20px; }
+    .footer .footer-bottom p {
+      color: #666;
+      font: 14px/1.2 "Microsoft YaHei","Helvetica Neue"; }
+    .footer .footer-bottom a {
+      text-decoration: none;
+      margin: 15px 2px;
+      font-size: 0;
+      display: inline-block; }
 
 .contarner {
   width: 100%;
@@ -320,7 +368,7 @@ table {
       background-position: -458px -125px; }
 
 .live-telecast {
-  margin-top: 30px;
+  margin-top: 70px;
   padding: 20px 0;
   width: 100%;
   height: auto;
@@ -1147,5 +1195,96 @@ table {
         vertical-align: middle;
         max-width: 100%;
         max-height: 100%; }
+
+.back-top {
+  position: fixed;
+  top: 300px;
+  right: 50px;
+  z-index: 2;
+  background: rgba(249, 185, 10, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7ff9b90a,endColorstr=#7ff9b90a); }
+  .back-top .qq {
+    margin: 5px 10px 0;
+    padding-bottom: 50px;
+    overflow: hidden;
+    width: 29px;
+    height: 34px;
+    display: block;
+    background-image: url("../images/wasp.png");
+    background-repeat: no-repeat;
+    background-position: -768px 0;
+    border-bottom: 1px solid #fff; }
+  .back-top .top {
+    margin: 5px 5px 0;
+    width: 40px;
+    height: 30px;
+    display: block;
+    background-image: url("../images/wasp.png");
+    background-repeat: no-repeat;
+    background-position: -763px -50px; }
+
+.WeChat-text-list {
+  display: none; }
+  .WeChat-text-list .promotion {
+    margin-top: 20px;
+    height: auto;
+    overflow: hidden;
+    width: 100%; }
+    .WeChat-text-list .promotion li {
+      float: left;
+      width: 198px;
+      height: auto;
+      border: 1px solid #ffc100;
+      text-align: center;
+      margin: 20px 21px;
+      padding: 10px 0; }
+      .WeChat-text-list .promotion li h3 {
+        font: bold 16px/1.5 "Microsoft YaHei","Helvetica Neue";
+        color: #515151; }
+      .WeChat-text-list .promotion li .text-num {
+        padding: 0 5px;
+        margin-top: 10px;
+        height: auto;
+        overflow: hidden; }
+        .WeChat-text-list .promotion li .text-num dd {
+          float: left;
+          width: 60px; }
+          .WeChat-text-list .promotion li .text-num dd p {
+            font: 14px/1.2 "Microsoft YaHei","Helvetica Neue";
+            color: #242424;
+            text-align: center; }
+          .WeChat-text-list .promotion li .text-num dd .num {
+            color: #fa8615; }
+      .WeChat-text-list .promotion li a {
+        margin: 20px auto 0;
+        display: block;
+        width: 86px;
+        border: 1px solid #ffbe17;
+        font: 13px/1.5 "Microsoft YaHei","Helvetica Neue";
+        color: #ffbe17;
+        text-align: center;
+        text-decoration: none; }
+
+.bee-index {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 70px 0 40px 0;
+  background-color: #efefef; }
+  .bee-index .bee-index-title h3 {
+    width: 300px;
+    border-bottom: 2px solid #efefef; }
+  .bee-index .bee-index-title p {
+    margin-left: 380px; }
+  .bee-index .bee-index-title i {
+    width: 42px;
+    height: 31px;
+    background: url("../images/wasp.png") -360px 0 no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle; }
+  .bee-index table {
+    margin: 20px 0;
+    text-align: center; }
 
 /*# sourceMappingURL=index.css.map */
