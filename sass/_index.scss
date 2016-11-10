@@ -532,6 +532,16 @@
 		vertical-align: middle;
 	}
 }
+.specialist-title{
+	i{
+		width:34px;
+		height:36px;
+		background:url("../images/wasp.png") -560px 0 no-repeat;
+		display:inline-block;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
 .WeChat-promotion{
 	width:100%;
 	height:auto;
@@ -899,6 +909,428 @@
 		margin-top: 20px;
 		width:100%;
 		height:auto;
+		overflow:hidden;
 		background:url("../images/bee_bg.jpg") no-repeat;
+		.bee-nav{
+			float:left;
+			padding:80px 25px;
+			li{
+				margin:10px 0;
+				width:150px;
+				font:18px/60px "Microsoft YaHei","Helvetica Neue";
+				border:2px solid #fff;
+				color:#fff;
+				text-align:center;
+				cursor:pointer;
+			}
+			.active{
+                color:#354e47;
+                background-color:#fff
+			}
+		}
+		.bee-text-all{
+			margin-left:220px;
+			.bee-text-list{
+				display:none;
+				height:auto;
+				overflow:hidden;
+			}
+			.bee-content{
+                 padding:48px 0;
+				.bee-content-list{
+					float:left;
+                    width:316px;
+                    height:110px;
+                    background-color:#fff;
+                    padding:7px 0 0 10px;
+                    margin:0 10px 10px 0;
+                    img{
+                    	float:left;
+                    	width:96px;
+                    	height:97px;
+                    }
+                    .name{
+                    	margin-left:106px;
+                    	h3{
+                    		font:bold 18px/1.5 "Microsoft YaHei","Helvetica Neue";
+                    	    color:#000;
+                    	}
+                    	p{
+                    		font:12px/1.5 "Microsoft YaHei","Helvetica Neue";
+                    		color:#ff9c00;
+                    	}
+                    	a{
+                    		margin-top:5px;
+						    display: block;
+						    width:74px;
+						    border: 1px solid #ffbe17;
+						    font: 12px/1.5 "Microsoft YaHei","Helvetica Neue";
+						    color: #ffbe17;
+						    text-align: center;
+						    text-decoration: none;
+                    	}
+                    }
+                    h2{
+                       font: 30px/1.5 "Microsoft YaHei","Helvetica Neue";
+                       text-align:center;
+                       color:#000;
+                    }
+                    a{
+                    	display:block;
+                    	font: 18px/1.5 "Microsoft YaHei","Helvetica Neue";
+                    	text-align:right;
+                    	text-decoration: none;
+                    	color:#000;
+                    }
+				}
+				.bee01{
+					background:linear-gradient(-45deg, transparent 2em, #fff 0);
+					margin:45px 20px 20px 35px;
+				}
+				.bee02{
+					background:linear-gradient(-45deg, transparent 2em, #fff 0);
+				}
+				.bee03{
+					background:linear-gradient(135deg, transparent 2em, #fff 0);
+					margin:80px 0 20px -30px;
+				}
+				.bee04{
+					background:linear-gradient(45deg, transparent 2em, #fff 0);
+					margin:-30px 20px 0 -10px;
+				}
+				.bee05{
+					background:linear-gradient(135deg, transparent 2em, #fff 0);
+					margin:-80px 20px 20px 0;
+				}
+				.bee06{
+					background:linear-gradient(-135deg, transparent 2em, #fff 0);
+					margin:0 0 0 5px;
+				}
+				.bee07{
+					background:linear-gradient(45deg, transparent 2em, #fff 0);
+					margin:-60px 0 0 330px;
+					height:auto;
+					padding:10px 30px;
+				}
+			}
+		}
 	}
+}
+.specialist{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	padding:70px 0 40px 0;
+	background-color:#fff;
+	.specialist-list{
+		float:left;
+		margin:60px 10px 0;
+		width:280px;
+		height:456px;
+		overflow:hidden;
+		border:1px solid #eee;
+		box-shadow:-3px 0 10px rgba(0,0,0,.1), /*左边阴影*/  
+	    3px 0 10px rgba(0,0,0,.1), /*右边阴影*/  
+	    0 -3px 10px rgba(0,0,0,.1), /*顶部阴影*/  
+	    0 3px 10px rgba(0,0,0,.1); /*底边阴影*/ 
+		font-size:0;
+		cursor:pointer;
+		&:nth-child(2n){
+			margin-top:100px;
+		}
+		h2{
+			padding:10px 0 0 10px;
+			font:bold 24px/2 "Microsoft YaHei","Helvetica Neue";
+			color:#000;
+			span{
+				font-size:18px;
+				font-weight:normal;
+			}
+		}
+		p{
+			padding:0 10px 10px 50px;
+			font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+		}
+	}
+	.front{	
+	    height:360px;		
+		img{
+			width:100%;
+			height:auto;
+		}
+	}
+	.reverse{
+		background-color:#fff;
+		height:360px;
+		-moz-transition: all .5s; /* Firefox 4 */
+		-webkit-transition: all .5s; /* Safari 和 Chrome */
+		-o-transition: all .5s; /* Opera */
+		transition:all .5s;
+		p{
+			padding:10px 10px 10px 10px;
+			font:14px/1.5 "Microsoft YaHei","Helvetica Neue";
+		}
+	}
+	.active{
+		.reverse{
+			-ms-transform:translate(0 ,-100%);	/* IE 9 */
+			-moz-transform:translate(0 ,-100%); 	/* Firefox */
+			-webkit-transform:translate(0 ,-100%); /* Safari 和 Chrome */
+			-o-transform:translate(0 ,-100%); 	/* Opera */
+			transform: translate(0 ,-100%);
+		}
+	}
+}
+.successful{
+	margin-top:100px;
+	width:100%;
+	height:auto;
+    overflow:hidden;
+	.successful-title{
+		text-align:center;
+		margin-bottom:20px;
+		h2{
+			position:relative;
+            font:bold 30px/2 "Microsoft YaHei","Helvetica Neue";
+            color:#000;
+            &:before{
+               position:absolute;
+               left:50%;
+               bottom:15px;
+               content:"";
+               width:300px;
+               height:1px;
+               margin-left:-370px;
+               background-color:#333;
+            }
+            &:after{
+               position:absolute;
+               right:50%;
+               bottom:15px;
+               content:"";
+               width:300px;
+               height:1px;
+               margin-right:-370px;
+               background-color:#333;
+            }
+		}
+		p{
+            font:14px/2 "Microsoft YaHei","Helvetica Neue";
+            color:#6f6f6f;
+		}
+	}
+	.successful-container{
+		background:url("../images/successful_bg.jpg") no-repeat;
+		height:auto;
+        overflow:hidden;
+        padding:30px 0 60px 0;
+	}
+	.successful-ul{
+		margin:0 auto;
+		width:725px;
+		height:auto;
+        overflow:hidden;
+		li{
+			width:161px;
+			height:185px;
+			background-image:url("../images/wasp.png");
+            background-repeat: no-repeat;
+            background-position:0 -205px;
+            float:left;
+            margin:0 10px;
+            padding:60px 0 0 0;
+            text-align:center;
+            cursor:pointer;
+            i{
+                margin:0 auto;
+            	width:36px;
+            	height:29px;
+            	display:block;
+                background-image:url("../images/wasp.png");
+	            background-repeat: no-repeat;
+            }
+            .i-list1{
+	            background-position:-1px -423px;
+            }
+            .i-list2{
+	            background-position:-50px -423px;
+	            height:40px;
+            }
+            .i-list3{
+            	background-position:-287px -420px;
+	            width:36px;
+	            height:40px; 
+            }
+            .i-list4{
+            	background-position:-108px -423px;
+	            width: 42px;
+                height: 40px; 
+            }
+            .i-list5{
+            	background-position:-174px -420px;
+	            width:36px;
+                height:38px;    
+            }
+            .i-list6{
+                background-position:-232px -420px;
+	            height:32px;
+            }
+            h3{
+               font:bold 20px/2 "Microsoft YaHei","Helvetica Neue";	
+               color:#000;
+            }
+            a{
+            	text-decoration:none;
+            	color:#666;
+            	p{
+                    font:14px/1.5 "Microsoft YaHei","Helvetica Neue";	
+            	}
+            	h3{
+            		font-weight:100;
+                    font:30px/1.5 "Microsoft YaHei","Helvetica Neue";
+            	}
+            }
+		}
+		.active{
+			background-position:-162px -205px;
+			 .i-list1{
+	            background-position:-1px -423px;
+            }
+            .i-list2{
+	            background-position:-50px -423px;
+	            height:40px;
+            }
+            .i-list3{
+            	background-position:-287px -420px;
+	            width:36px;
+	            height:40px; 
+            }
+            .i-list4{
+            	background-position:-108px -423px;
+	            width: 42px;
+                height: 40px; 
+            }
+            .i-list5{
+            	background-position:-174px -420px;
+	            width:36px;
+                height:38px;    
+            }
+            .i-list6{
+                background-position:-232px -420px;
+	            height:32px;
+            }
+			h3{
+				color:#fff;
+			}
+			a{
+            	text-decoration:none;
+            	color:#fff;
+            }
+		}
+		.one{
+			margin-left:100px;
+		}
+		.bottom{
+			margin-top:-35px
+		}
+	}
+	.successful-text-all{
+		margin-top:40px;
+		.successful-text-list{
+			display:none;
+			width:100%;
+			font-size:0;
+			height:auto;
+			overflow:hidden;
+			background:rgba(255,255,255,.5);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff);  //兼容IE8
+			img{
+				float:left;
+				width:433px;
+				height:246px;
+			}
+			.info-text{
+				margin-left:433px;
+				padding:20px;
+				h2{
+					 font:bold 24px/2 "Microsoft YaHei","Helvetica Neue";	
+					 color:#000；
+				}
+				h3{
+					 font:16px/1.5 "Microsoft YaHei","Helvetica Neue";	
+					 color:#000；
+				}
+				p{
+					 font:14px/1.5 "Microsoft YaHei","Helvetica Neue";
+					 color:#000；	
+				}
+			}
+			a{
+				position:absolute;
+				margin:8px 0 0 1084px;
+			    display:block;
+                width:120px;
+                font:14px/30px "Microsoft YaHei","Helvetica Neue";
+                text-decoration:none;
+                text-align:center;
+                color:#000;
+                background-color:#e3a600;
+			}
+		}
+	}
+}
+.link{
+	width:100%;
+	height:auto;
+    overflow:hidden;
+    padding:100px 0;
+    .link-title{
+    	width:100%;
+		height:auto;
+	    overflow:hidden;
+    	h2{
+    		font:36px/2 "Microsoft YaHei","Helvetica Neue";
+    		color:#000;	
+    		text-align:center;
+    		span{
+    			font-weight:bold;
+    		}
+    	}
+    	ul{
+    		padding:0 50px;
+    		li{
+    			float:left;
+    			width:33.3333%;
+    			text-align:center;
+    			h3{
+                    font:32px/2 "Microsoft YaHei","Helvetica Neue";
+                    color:#414141;
+    			}
+    			p{
+                    font:12px/2 "Microsoft YaHei","Helvetica Neue";
+                    color:#414141;
+    			}
+    		}
+    	}
+    }
+    .link-img{
+    	margin-top:100px;
+    	width:100%;
+		height:auto;
+	    overflow:hidden;
+    	ul{
+    		li{
+    			float:left;
+			    width: 194px;
+			    text-align: center;
+			    padding: 10px 5px;
+			    font-size:0;
+			    img{
+			    	vertical-align: middle;
+				    max-width: 100%;
+				    max-height: 100%;
+			    }
+    		}
+    	}
+    }
 }

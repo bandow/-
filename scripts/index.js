@@ -5,7 +5,7 @@ $(function(){
 	});
     //login登录-begin
     $(".login-container ul li").each(function(index,element){
-    	$(this).on("click",function(){
+    	$(this).bind("click",function(){
             $(this).addClass("active").siblings().removeClass("active");
             if(index==0){
               	$(".line").css("left","7%");
@@ -16,23 +16,23 @@ $(function(){
     	});
     }); 
     //icon-list  图标列表
-    $(".icon-list .list-text").on("mousemove",function(){
+    $(".icon-list .list-text").bind("mousemove",function(){
         $(this).addClass("active").siblings().removeClass("active");
     }); 
     //直播视频
-    $(".live-top ul li").on("click",function(){
+    $(".live-top ul li").bind("click",function(){
         $(this).addClass("active").siblings().removeClass("active");
         $(".live-text .live-text-list").eq($(this).index()).show().siblings().hide();
     });
-    $(".title-nav li").on("mousemove",function(){
+    $(".title-nav li").bind("mousemove",function(){
         $(this).addClass("active").siblings().removeClass("active");
         $(".live-text-list-container .list").eq($(this).index()).show().siblings().hide();   
     });
-     $(".big-img-list").on("mousemove",function(){
+     $(".big-img-list").bind("mousemove",function(){
             $(this).addClass("active").siblings().removeClass("active");
         });
     //微信推广
-    $(".WeChat-nav li").on("mousemove",function(){
+    $(".WeChat-nav li").bind("mousemove",function(){
         $(this).addClass("active").siblings().removeClass("active");
         $(".WeChat-text-all .WeChat-text-list").eq($(this).index()).show().siblings().hide();
     }); 
@@ -110,7 +110,7 @@ $(function(){
         }]
     });
     //微博红人
-    $(".Micro-nav li").on("mousemove",function(){
+    $(".Micro-nav li").bind("mousemove",function(){
         $(this).addClass("active").siblings().removeClass("active");
         $(".Micro-text-all .Micro-text-list").eq($(this).index()).show().siblings().hide();
     }); 
@@ -198,8 +198,23 @@ $(function(){
     });
     $(".highcharts-button").hide();
     //软文发稿
-    $(".soft-nav li").on("mousemove",function(){
+    $(".soft-nav li").bind("mousemove",function(){
         $(this).addClass("active").siblings().removeClass("active");
         $(".soft-text-all .soft-text-list").eq($(this).index()).show().siblings().hide();
     }); 
+    //蜂效应
+    $(".bee-nav li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".bee-text-all .bee-text-list").eq($(this).index()).show().siblings().hide();
+    }); 
+    //媒介专家
+     $(".specialist-list").bind("hover",function(){
+        $(this).toggleClass("active");
+    }); 
+	//成功案例
+	$(".successful-ul li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".successful-text-all .successful-text-list").eq($(this).index()).show().siblings().hide();
+    }); 
+	
 });
