@@ -15,6 +15,9 @@ $(function(){
             $(".login-list .form").eq($(this).index()).show().siblings().hide();
     	});
     }); 
+    $(".name input").on("focus",function(){
+    	$(".error-prompt").show();
+    })
     //icon-list  图标列表
     $(".icon-list .list-text").bind("mousemove",function(){
         $(this).addClass("active").siblings().removeClass("active");
@@ -202,6 +205,9 @@ $(function(){
         $(this).addClass("active").siblings().removeClass("active");
         $(".soft-text-all .soft-text-list").eq($(this).index()).show().siblings().hide();
     }); 
+    $(".soft-top li").bind("hover",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    }); 
     //蜂效应
     $(".bee-nav li").bind("mousemove",function(){
         $(this).addClass("active").siblings().removeClass("active");
@@ -216,8 +222,34 @@ $(function(){
         $(this).addClass("active").siblings().removeClass("active");
         $(".successful-text-all .successful-text-list").eq($(this).index()).show().siblings().hide();
     }); 
+    $(".link-img li").bind("hover",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    }); 
 	//backtop
     $(".back-top .top").bind("click",function(){
         $('html,body').animate({scrollTop: '0px'}, 800);
     }); 
+    $(".back-top .qq").bind("mousemove",function(){
+       $(this).addClass("active");
+    });
+     $(".back-top .qq").bind("mouseout",function(){
+       $(this).removeClass("active");
+    });
+      $(".back-top .top").bind("mousemove",function(){
+       $(this).addClass("active");
+    });
+     $(".back-top .top").bind("mouseout",function(){
+       $(this).removeClass("active");
+    });
+
+    //WeChat_promotion 微信推广01
+    $(".promotion li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    }); 
+    //WeChat_promotion 微信推广02
+    $(".WeChat-success-nav li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".success-all .success-list").eq($(this).index()).show().siblings().hide();
+    });
+
 });
