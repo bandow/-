@@ -21,24 +21,24 @@
 			position:absolute;
 			right:0;
 			background-color:#fff;
-			padding:20px;
+			padding:10px 20px;
 			width:384px;
 			height:360px;
 			overflow:hidden;
 			ul{
 				position:relative;
 				width:100%;
-				height:56px;
+				height:50px;
 				li{
 					float:left;
 					width:50%;
 					text-align:center;
 					color:#8a8a8a;
-					font:16px/56px "Microsoft YaHei","Helvetica Neue";
+					font:16px/50px "Microsoft YaHei","Helvetica Neue";
 					cursor: pointer;
 				}
 				.active{
-					font:bold 18px/56px "Microsoft YaHei","Helvetica Neue";
+					font:bold 18px/50px "Microsoft YaHei","Helvetica Neue";
 					color:#555;
 				}
 				.line{
@@ -187,7 +187,7 @@
                        font:14px/30px "Microsoft YaHei","Helvetica Neue";
                        margin:20px 0;
 					}
-					a{
+					.get-into{
 						width:60%;
 						margin:0 auto;
 						border-radius:5px;
@@ -196,6 +196,13 @@
 						font:14px/30px "Microsoft YaHei","Helvetica Neue";
 						color:#fff;
 						text-decoration:none;
+					}
+					.close{
+                       margin-top:10px;
+                       display:block;
+                       font:14px/30px "Microsoft YaHei","Helvetica Neue";
+                       text-decoration:none;
+                       text-align: center;
 					}
 				}
 			}
@@ -762,8 +769,7 @@
 		.Micro-text-list{
 			display:none;
 			.Micro-top{
-				height:auto;
-				overflow:hidden;
+				height:210px;
 				li{
 					width:50%;
 					float:left;
@@ -1504,12 +1510,90 @@
 	padding:70px 0 40px 0;
 	background-color:#efefef;
 	.bee-index-title{
+		padding-bottom:10px;
 		h3{
 			width:300px;
 			border-bottom: 2px solid #efefef;
+			top:-25px;
 		}
-		p{
-			margin-left:380px;
+		.time{
+			margin-left:540px;
+			height:33px;
+			overflow:hidden;
+			>div{
+				float:left;
+				margin-left:20px;
+			}
+			.date{
+				font:13px/33px "Microsoft YaHei","Helvetica Neue";
+				color:#000;
+				span{
+					margin-left:10px;
+					border:1px solid #737373;
+					color:#7d7d7d;
+					height:31px;
+					line-height:31px;
+					display:inline-block;
+					padding:0 10px;
+					cursor: pointer;
+					em{
+						margin-left: 10px;
+						width:13px;
+						height:11px;
+						display:inline-block;
+						background:url("../images/wasp.png") -787px -84px no-repeat;
+					}
+				}
+			}
+			.territory{
+				font:13px/33px "Microsoft YaHei","Helvetica Neue";
+			    color:#000;
+			    cursor: pointer;
+				a{
+					margin-left:10px;
+					border:1px solid #737373;
+					color:#7d7d7d;
+					height:31px;
+					line-height:31px;
+					text-decoration:none;
+					display:inline-block;
+					padding:0 10px;
+					em{
+						margin-left: 10px;
+						width:13px;
+						height:11px;
+						display:inline-block;
+						background:url("../images/wasp.png") -787px -84px no-repeat;
+					}
+				}	
+			}
+			.search{
+				height:33px;
+				input{
+					float:left;
+                    background:none;
+					border:0;
+					outline:none;
+					width:200px;
+					height:27px;
+					border: 1px solid #737373;
+					padding-left:5px;
+
+				}
+				button{
+					float:left;
+					background:none;
+					border:0;
+					outline:none;
+					width:55px;
+					height:31px;
+					background:url("../images/wasp.png") -746px 0 no-repeat;
+					cursor: pointer;
+				}
+				button:hover{
+				   background:url("../images/wasp.png") -746px -33px no-repeat;	
+				}
+			}
 		}
 		i{
 			width: 34px;
@@ -1674,4 +1758,913 @@
            }
         }
     }
+}
+//微博页面microblog
+.Micro-blog{
+	.microblog-container{
+		background:#fff;
+		.microblog{
+			padding:10px;
+			width:394px;
+			height:auto;
+			float:left;
+			margin:0 10px 10px 0;
+			background-color:#f5f5f5;
+			border:1px solid #f5f5f5;
+			&:nth-child(3n){
+				margin-right:0;
+			}
+			&:hover{
+				background-color:#fff;
+				border:1px solid #f49000;
+			}
+			.top{
+				height:auto;
+			}
+			.left{
+				width:180px;
+				float:left;
+				.name{
+					height:auto;
+			        overflow:hidden;
+			        margin-bottom:5px;
+					img{
+						float:left;
+						width:80px;
+						height:80px;
+					}
+					.text{
+						margin-left:90px;
+					}
+					h3{
+						color:#ffb400;
+						font: 18px/2 "Microsoft YaHei","Helvetica Neue";
+					}
+					p{
+						i{
+
+						}
+						font: 12px/1.5 "Microsoft YaHei","Helvetica Neue";
+						color:#666;
+					}
+				}
+				p{
+					font: 14px/1.2 "Microsoft YaHei","Helvetica Neue";
+					color:#404040;
+					margin-bottom:5px;
+				}
+				dl{
+					height: auto;
+                    overflow: hidden;
+					dd{
+						float:left;
+						width:60px;
+						p{
+							font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+							color:#404040;
+						}
+						.color{
+							color:#ffb400;
+							font-weight:bold;
+						}
+					}
+				}
+			}
+			.right{
+				float:left;
+			}
+			a{
+				margin:200px auto 0;
+			    display: block;
+			    width:100px;
+			    background-color: #ffb800;
+			    font: 14px/2 "Microsoft YaHei","Helvetica Neue";
+			    text-decoration: none;
+			    color: #fff;
+			    text-align:center;
+			}
+		}
+		.a{
+		   margin-bottom:20px;
+		   margin-right:10px;
+		   font:14px/2 "Microsoft YaHei","Helvetica Neue";
+	       float: right;
+	       text-decoration:none;
+	       color:#666;
+		}
+	}
+}
+//媒体焦点推荐
+.foci-title{
+	h3{
+		width:280px;
+		border-bottom:2px solid #e8edef;
+	}
+	p{
+		margin-left:330px;
+	}
+	i{
+		width:50px;
+		height:37px;
+		background:url("../images/wasp.png") -557px 0 no-repeat;
+		display:inline-block;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
+.foci{
+	width:100%;
+	height:auto;
+	padding:60px 0 40px 0;
+	background-color:#e8edef;
+	.foci-nav{
+		width:750px;
+		height: auto;
+	    overflow:hidden;
+		margin:20px auto;
+		li{
+			float:left;
+			width:150px;
+			color:#000;
+			font:18px/2 "Microsoft YaHei","Helvetica Neue";
+			text-align:center;
+			cursor:pointer;
+		}
+		.active{
+			font-weight:bold;
+		}
+	}
+	.foci-text-all{
+		.foci-text-list{
+			display:none;
+			ul{
+				height: auto;
+	            overflow:hidden;
+				li{
+				   margin:0 20px 20px 20px;
+                   float:left;
+                   width:360px;
+                   text-align:center;
+                   img{
+                   	width:300px;
+                   	height:350px;
+                   }
+                   p{
+                   	  font:18px/2 "Microsoft YaHei","Helvetica Neue";
+                   }
+				}
+			}
+		}
+	}
+}
+//foci-success成功案例
+.foci-success-container{
+   padding:30px;
+}
+.foci-success-nav{
+	margin-bottom:40px;
+	float:left;
+	li{
+		width:100px;
+		font:14px/2 "Microsoft YaHei","Helvetica Neue";
+		color:#666;
+		text-align:center;
+		cursor:pointer;
+		margin-top:40px;
+	}
+	.active{
+       color:#f9b90a;
+	}
+}
+.foci-success-all{
+	margin-left:220px;
+	.foci-success-list{
+		display:none;
+		.fociTitle{
+			margin-bottom:40px;
+			h2{
+               font:18px/2 "Microsoft YaHei","Helvetica Neue";
+               color:#333;
+               text-align:center;
+			}
+			a{
+               font:14px/2 "Microsoft YaHei","Helvetica Neue";
+               float: right;
+               text-decoration:none;
+               color:#666;
+               margin-top:-30px;
+			}
+		}
+		.content{
+			margin-bottom:40px;
+			.left{
+				float:left;
+				width: 324px;
+				h3{
+					font:bold 16px/2 "Microsoft YaHei","Helvetica Neue";
+					color:#333;
+				}
+				p{
+					font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+					color:#666;
+					text-indent:2em;
+					margin-bottom:5px;
+				}
+			}
+			.right{
+				margin-left:354px;
+				h4{
+					font:bold 16px/2 "Microsoft YaHei","Helvetica Neue";
+					color:#333;
+				}
+				p{
+					font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+					color:#666;
+				}
+			}
+		}
+		.resource{
+			height: auto;
+			overflow: hidden;
+			h4{
+				font:bold 16px/2 "Microsoft YaHei","Helvetica Neue";
+				color:#333;
+				margin-bottom:10px;
+			}
+			ul{
+				li{
+					float:left;
+					text-align:center;
+					margin-left:60px;
+					img{
+						width:50px;
+						height:50px;
+						border-radius:100px;
+						border:1px solid #ccc;
+					}
+					p{
+						font:14px/2 "Microsoft YaHei","Helvetica Neue";
+						color:#666;
+					}
+					a{
+						font:14px/2 "Microsoft YaHei","Helvetica Neue";
+		               	text-decoration:none;
+		               	color:#666;
+		               	border:1px solid #ccc;
+		               	padding:0 3px;
+					}
+				}
+			}
+		}
+	}
+}
+//specialist媒介专家
+.specialist{
+	.specialist-page{
+         padding:60px 0;
+         .specialist-list{
+         	margin: 10px 10px 0;
+         	&:nth-child(2n) {
+			    margin-top: 50px;
+			}
+         }
+	}
+	a{
+	   margin-top:20px;
+	   margin-right:10px;
+	   font:14px/2 "Microsoft YaHei","Helvetica Neue";
+       float: right;
+       text-decoration:none;
+       color:#666;
+	}
+}
+//video
+.video-title{
+	i{
+		width:40px;
+		height:35px;
+		background:url("../images/wasp.png") -170px 0 no-repeat;
+		display:inline-block;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
+.video-title1{
+	i{
+		width:40px;
+		height:35px;
+		background:url("../images/wasp.png") -220px 0 no-repeat;
+		display:inline-block;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
+.video-page{
+    width:100%;
+	height:auto;
+	padding:100px 0 40px 0;
+	background-color:#fff;
+	.video-nav{
+		width:918px;
+		height: auto;
+	    overflow:hidden;
+		margin:20px auto;
+		li{
+			float:left;
+			width:102px;
+			color:#000;
+			font:18px/2 "Microsoft YaHei","Helvetica Neue";
+			text-align:center;
+			cursor:pointer;
+		}
+		.active{
+			font-weight:bold;
+		}
+	}
+	.video-all{
+		.video-list{
+			height: auto;
+	        overflow:hidden;
+			display:none;
+			background-color:#969696;
+			margin: 0 3px;
+			.v-img-name{
+				float:left;
+				width:480px;
+				background-color:#d9d9d9;
+				font-size:0;
+				.left{
+					position:relative;
+                    float:left;
+                    i{
+                    	position:absolute;
+                    	display:block;
+                    	top:50%;
+                    	left:50%;
+                    	width:85px;
+                    	height:45px;
+                    	margin:-22.5px 0 0 -42.5px;
+                    	background:url("../images/wasp.png") -715px -416px no-repeat;
+                    	cursor:pointer;
+                    }
+				}
+				.right{
+					padding:30px 0 0 20px;
+                    margin-left:240px; 
+                    height:183px;
+                    h3{
+                    	font:bold 18px/2 "Microsoft YaHei","Helvetica Neue";
+                    	color:#000;
+                    } 
+                    p{
+                    	font:14px/2 "Microsoft YaHei","Helvetica Neue";
+                    	color:#000;
+                    	strong{
+                    		font-weight: bold;
+                    		color:#ff8a00;
+                    	}
+                    }
+                    a{
+					    display: block;
+					    width: 86px;
+					    height: 30px;
+					    background-color: #ffbe17;
+					    font: 13px/30px "Microsoft YaHei","Helvetica Neue";
+					    color: #000;
+					    text-align: center;
+					    text-decoration: none;
+                    }
+				}
+			}
+			.v-more{
+				float:left;
+				width: 238px;
+			    height: 183px;
+			    display: block;
+			    background-image: url("../images/more.png");
+			    background-repeat: no-repeat;
+			    background-position: 0 0;
+			    &:hover{
+			    	background-position: 0 -183px;
+			    }
+			}
+			.v-img-name-b{
+				float:left;
+				width:480px;
+				background-color:#d9d9d9;
+				font-size:0;
+				.left{
+					padding:30px 0 0 20px;
+                    float:left;
+                    height:183px;
+                    h3{
+                    	font:bold 18px/2 "Microsoft YaHei","Helvetica Neue";
+                    	color:#000;
+                    } 
+                    p{
+                    	font:14px/2 "Microsoft YaHei","Helvetica Neue";
+                    	color:#000;
+                    	strong{
+                    		font-weight: bold;
+                    		color:#ff8a00;
+                    	}
+                    }
+                    a{
+					    display: block;
+					    width: 86px;
+					    height: 30px;
+					    background-color: #ffbe17;
+					    font: 13px/30px "Microsoft YaHei","Helvetica Neue";
+					    color: #000;
+					    text-align: center;
+					    text-decoration: none;
+                    }
+				}
+				.right{
+					position:relative;
+					margin-left:240px;  
+                    i{
+                    	position:absolute;
+                    	display:block;
+                    	top:50%;
+                    	left:50%;
+                    	width:85px;
+                    	height:45px;
+                    	margin:-22.5px 0 0 -42.5px;
+                    	background:url("../images/wasp.png") -715px -416px no-repeat;
+                    	cursor:pointer;
+                    }
+				}			
+			}
+			.active{
+				background-color:#585858;
+				.left{
+                    i{
+                    	background:url("../images/wasp.png") -715px -477px no-repeat;
+                    }
+				}
+				.right{
+                    h3{
+                    	color:#fff;
+                    } 
+                    p{
+                    	color:#fff;
+                    	strong{
+                    		color:#fff;
+                    	}
+                    }
+				}
+			}
+			.active{
+				background-color:#585858;
+				.left{
+                    h3{
+                    	color:#fff;
+                    } 
+                    p{
+                    	color:#fff;
+                    	strong{
+                    		color:#fff;
+                    	}
+                    }
+				}
+				.right{
+                    i{
+                    	background:url("../images/wasp.png") -715px -477px no-repeat;
+                    }
+				}
+			}
+		}
+	}
+	.video-nav1{
+		width:918px;
+		height: auto;
+	    overflow:hidden;
+		margin:20px auto;
+		li{
+			float:left;
+			width:102px;
+			color:#000;
+			font:18px/2 "Microsoft YaHei","Helvetica Neue";
+			text-align:center;
+			cursor:pointer;
+		}
+		.active{
+			font-weight:bold;
+		}
+	}
+	.video-all1{
+		.video-list1{
+			height: auto;
+	        overflow:hidden;
+			display:none;
+			background-color:#969696;
+			margin: 0 3px;
+			.v-img-name{
+				float:left;
+				width:480px;
+				background-color:#d9d9d9;
+				font-size:0;
+				.left{
+					position:relative;
+                    float:left;
+                    i{
+                    	position:absolute;
+                    	display:block;
+                    	top:50%;
+                    	left:50%;
+                    	width:85px;
+                    	height:45px;
+                    	margin:-22.5px 0 0 -42.5px;
+                    	background:url("../images/wasp.png") -715px -416px no-repeat;
+                    	cursor:pointer;
+                    }
+				}
+				.right{
+					padding:30px 0 0 20px;
+                    margin-left:240px; 
+                    height:183px;
+                    h3{
+                    	font:bold 18px/2 "Microsoft YaHei","Helvetica Neue";
+                    	color:#000;
+                    } 
+                    p{
+                    	font:14px/2 "Microsoft YaHei","Helvetica Neue";
+                    	color:#000;
+                    	strong{
+                    		font-weight: bold;
+                    		color:#ff8a00;
+                    	}
+                    }
+                    a{
+					    display: block;
+					    width: 86px;
+					    height: 30px;
+					    background-color: #ffbe17;
+					    font: 13px/30px "Microsoft YaHei","Helvetica Neue";
+					    color: #000;
+					    text-align: center;
+					    text-decoration: none;
+                    }
+				}
+			}
+			.v-more{
+				float:left;
+				width: 238px;
+			    height: 183px;
+			    display: block;
+			    background-image: url("../images/more.png");
+			    background-repeat: no-repeat;
+			    background-position: 0 0;
+			    &:hover{
+			    	background-position: 0 -183px;
+			    }
+			}
+			.v-img-name-b{
+				float:left;
+				width:480px;
+				background-color:#d9d9d9;
+				font-size:0;
+				.left{
+					padding:30px 0 0 20px;
+                    float:left;
+                    height:183px;
+                    h3{
+                    	font:bold 18px/2 "Microsoft YaHei","Helvetica Neue";
+                    	color:#000;
+                    } 
+                    p{
+                    	font:14px/2 "Microsoft YaHei","Helvetica Neue";
+                    	color:#000;
+                    	strong{
+                    		font-weight: bold;
+                    		color:#ff8a00;
+                    	}
+                    }
+                    a{
+					    display: block;
+					    width: 86px;
+					    height: 30px;
+					    background-color: #ffbe17;
+					    font: 13px/30px "Microsoft YaHei","Helvetica Neue";
+					    color: #000;
+					    text-align: center;
+					    text-decoration: none;
+                    }
+				}
+				.right{
+					position:relative;
+					margin-left:240px;  
+                    i{
+                    	position:absolute;
+                    	display:block;
+                    	top:50%;
+                    	left:50%;
+                    	width:85px;
+                    	height:45px;
+                    	margin:-22.5px 0 0 -42.5px;
+                    	background:url("../images/wasp.png") -715px -416px no-repeat;
+                    	cursor:pointer;
+                    }
+				}			
+			}
+			.b-right{
+				margin-left:238px;
+			}
+			.active{
+				background-color:#585858;
+				.left{
+                    i{
+                    	background:url("../images/wasp.png") -715px -477px no-repeat;
+                    }
+				}
+				.right{
+                    h3{
+                    	color:#fff;
+                    } 
+                    p{
+                    	color:#fff;
+                    	strong{
+                    		color:#fff;
+                    	}
+                    }
+				}
+			}
+			.active{
+				background-color:#585858;
+				.left{
+                    h3{
+                    	color:#fff;
+                    } 
+                    p{
+                    	color:#fff;
+                    	strong{
+                    		color:#fff;
+                    	}
+                    }
+				}
+				.right{
+                    i{
+                    	background:url("../images/wasp.png") -715px -477px no-repeat;
+                    }
+				}
+			}
+		}
+	}
+}
+.bee-index-video.bee-index{
+	table{
+		tbody{
+			tr{
+				td{
+					&:nth-child(2){
+						width:15%;
+						img{
+							float:inherit;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//v-success微信成功案例
+.v-success-title{
+	i{
+		width:40px;
+		height:35px;
+		background:url("../images/wasp.png") -170px 0 no-repeat;
+		display:inline-block;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+	p{
+		height:33px;
+	}
+}
+.v-success{
+    width:100%;
+	height:auto;
+	padding:100px 0 40px 0;
+	background-color:#fff;
+	.v-success-nav{
+		width:918px;
+		height: auto;
+	    overflow:hidden;
+		margin:20px auto;
+		li{
+			float:left;
+			width:102px;
+			color:#000;
+			font:18px/2 "Microsoft YaHei","Helvetica Neue";
+			text-align:center;
+			cursor:pointer;
+		}
+		.active{
+			font-weight:bold;
+		}
+	}
+	.v-success-all{
+		.v-success-list{
+			height: auto;
+	        overflow:hidden;
+			display:none;
+			background-color:#fff;
+			margin: 0 1px;
+			.v-it{
+				float:left;
+				width:390px;
+				height: 500px;
+				margin-right:15px;
+				background-color:#eee;
+				&:nth-child(3n){
+					margin-right:0;
+				}
+				.img{
+					position: relative;
+					img{
+						width:100%;
+					}
+					.con{
+						display:none;
+						padding-top:20%;
+						width:100%;
+						height:100%;
+						position: absolute;
+					    top:0;
+					    left:0;
+					    background:rgba(0,0,0,.8);
+					    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);  //兼容IE8
+					}	
+					i{
+						margin:0 auto 10px;;
+						display:block;
+					    width: 85px;
+					    height: 45px;
+					    background: url("../images/wasp.png") -715px -416px no-repeat;
+					    cursor: pointer;
+					}
+					a{
+						margin:0 auto;
+						display:block;
+						width:80px;
+						text-decoration:none;
+						border:2px solid #fff;
+						font:bold 14px/2 "Microsoft YaHei","Helvetica Neue";
+						color:#fff;
+						text-align: center;
+					}
+				}
+				.content{
+					height: auto;
+	                overflow:hidden;
+					padding:15px 15px 25px 15px;
+					h3{
+						font:bold 18px/2 "Microsoft YaHei","Helvetica Neue";
+						color:#000;
+					}
+					h4{
+                       font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+                       color:#ffb400;
+                       margin:5px 0;
+                       border:1px solid #ffb400;
+                       display:inline-block;
+					}
+					p{
+                       font:12px/1.2 "Microsoft YaHei","Helvetica Neue";
+                       color:#737373;
+					}
+					.content-text{
+						float:left;
+					}
+                    .ct-one{
+						width:100%;
+						margin-bottom: 20px;
+						h4{
+							margin-bottom:20px;
+						}
+					}
+					.ct-two{
+						width:50%;
+					}
+				}
+			}
+			.active.v-it{
+				background-color:#ffb904;
+				.img{
+					.con{
+						display:block;
+					}	
+				}
+				.content{
+					h3{
+						color:#fff;
+					}
+					h4{                
+                       color:#fff;
+                       border:1px solid #fff;
+					}
+					p{
+                       color:#fff;
+					}
+				}
+			}
+			.a{
+				display: block;
+			    font: 18px/2 "Microsoft YaHei","Helvetica Neue";
+			    text-decoration: none;
+			    color: #363636;
+			    text-align:right;
+			}
+		}
+	}
+}
+//about
+.about{
+	padding-top:100px;
+	.top{
+		height: auto;
+	    overflow: hidden;
+	}
+	.left{
+		float: left;
+	}
+	.content{
+		padding-top: 20px;
+		margin-left:450px;
+		p{
+			font:14px/1.5 "Microsoft YaHei","Helvetica Neue";
+			color:#000;
+			strong{
+				font-weight:bold;
+				color:#000;
+				font-size:18px;
+			}
+		}
+		.English{
+			margin-top: 10px;
+			line-height:2;
+		}
+	}
+	.honour{
+		font-size: 0;
+	    height: auto;
+	    overflow: hidden;
+		img{
+			width:100%;
+		}
+	}
+}
+.contact-us{
+	width:100%;
+	background-color:#e0e0e0;
+	padding-bottom:70px;
+	.line{
+		width:300px;
+		height:20px;
+		background-color:#000;
+		margin:0 auto;
+	}
+	h2{
+        font:bold 28px/1.5 "Microsoft YaHei","Helvetica Neue";
+		color:#000;
+		text-align:center;
+	}
+	h3{
+		font:16px/1.5 "Microsoft YaHei","Helvetica Neue";
+		color:#000;
+		text-align:center;
+	}
+	ul{
+		margin:50px auto 0;
+		width:1072px;
+		height: auto;
+	    overflow: hidden;
+		li{
+			float:left;
+			width: 228px;
+			height:261px;
+			background:url("../images/about_b.png") 0 0 no-repeat;
+			margin:0 50px;
+			cursor: pointer;
+		}
+		.contact-list1{
+			background-position:0 0;
+		}
+		.contact-list2{
+			background-position:-252px 0;
+		}
+		.contact-list3{
+			background-position:-517px 0;
+		}
+		.active.contact-list1{
+			background-position:0 -287px;
+		}
+		.active.contact-list2{
+			background-position:-252px -287px;
+		}
+		.active.contact-list3{
+			background-position:-517px -287px;
+		}
+	}
 }

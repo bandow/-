@@ -15,16 +15,16 @@
 <!-- header begin -->
 <div class="header">
     <div class="w">
-    	<div class="logo"><img src="images/logo.png" alt=""></div>
+    	<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
     	<div class="nav">
     		<ul>
-    			<li class="active"><a href="">直播/短视频</a></li>
+    			<li><a href="video.html">直播/短视频</a></li>
     			<li><a href="WeChat_promotion.html">微信推广</a></li>
-    			<li><a href="">微博红人</a></li>
-    			<li><a href="">软文发稿</a></li>
-    			<li><a href="">媒介专家</a></li>
-    			<li><a href="">蜂效应</a></li>
-    			<li><a href="">关于我们</a></li>			                                      
+    			<li><a href="microblog.html">微博红人</a></li>
+    			<li><a href="advertorial.html">软文发稿</a></li>
+    			<li><a href="specialist.html">媒介专家</a></li>
+    			<li><a href="wasp.html">蜂效应</a></li>
+    			<li><a href="about.html">关于我们</a></li>                   
     		</ul>
     	</div>
     </div>
@@ -99,12 +99,13 @@
 						</div> 
 					</form>
 					<!-- 登录后 begin -->
-					<!--   <div class="login-success">
+					 <!--  <div class="login-success">
 					      <div class="img">
 					      	 <img src="images/head_icon.jpg" alt="">
 					      </div>
 					      <p>欢迎您，13719236677</p>
-					  	  <a href="">进入广告主平台</a>
+					  	  <a class="get-into" href="">进入广告主平台</a>
+					  	  <a class="close" href="">退出登录</a>
 					  </div> -->
 					<!-- 登录后 end -->
 				</div>
@@ -2507,9 +2508,257 @@
 <script src="scripts/lib/jquery-1.8.3.min.js"></script>
 <script src="scripts/lib/swiper-3.4.0.jquery.min.js"></script>
 <script src="scripts/lib/highcharts.js"></script>
-<script src="scripts/lib/highcharts-more.js"></script>
-<script src="scripts/lib/exporting.js"></script>
+<script src="scripts/lib/echarts.min.js"></script>
 <script src="scripts/index.js"></script>
+<script>
+	//icon-list  图标列表
+    $(".icon-list .list-text").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    }); 
+    //直播视频
+    $(".live-top ul li").bind("click",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".live-text .live-text-list").eq($(this).index()).show().siblings().hide();
+    });
+    $(".title-nav li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".live-text-list-container .list").eq($(this).index()).show().siblings().hide();   
+    });
+     $(".big-img-list").bind("mousemove",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    //微信推广
+    $(".WeChat-nav li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".WeChat-text-all .WeChat-text-list").eq($(this).index()).show().siblings().hide();
+    }); 
+    //近7天头条阅读数图表
+    $('#chart1').highcharts({
+        credits: {
+            text: '',
+            href: ''
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['9-27', '9-28', '9-29', '9-30', '10-1', '10-2','10-3'],
+            tickPixelInterval:1
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            tickPositions: [0,5, 10, 15],
+            tickPixelInterval:1
+        },
+        series: [{
+            name: '近7天头条阅读数',
+            data: [10, 10, 10, 10, 10, 10]
+        }]
+    });
+    $('#chart2').highcharts({
+        credits: {
+            text: '',
+            href: ''
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['9-27', '9-28', '9-29', '9-30', '10-1', '10-2','10-3'],
+            tickPixelInterval:1
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            tickPositions: [0,5, 10, 15],
+            tickPixelInterval:1
+        },
+        series: [{
+            name: '近7天头条阅读数',
+            data: [10, 10, 10, 10, 10, 10]
+        }]
+    });
+    $('#chart3').highcharts({
+        credits: {
+            text: '',
+            href: ''
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['9-27', '9-28', '9-29', '9-30', '10-1', '10-2','10-3'],
+            tickPixelInterval:1
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            tickPositions: [0,5, 10, 15],
+            tickPixelInterval:1
+        },
+        series: [{
+            name: '近7天头条阅读数',
+            data: [10, 10, 10, 10, 10, 10]
+        }]
+    });
+    //微博红人
+    $(".Micro-nav li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".Micro-text-all .Micro-text-list").eq($(this).index()).show().siblings().hide();
+    }); 
+    var myChart = echarts.init(document.getElementById('microChart1'));
+    option = {
+        title: {
+            text: ''
+        },
+        tooltip: {},
+        radar: {
+            // shape: 'circle',
+            indicator: [
+               { name: '热门度', max: 5},
+               { name: '性价比', max: 5},
+               { name: '传播力', max: 5},
+               { name: '覆盖度', max: 5},
+               { name: '互动性', max: 5},
+               { name: '知名度', max: 5}
+            ],
+            name: {
+                textStyle: {
+                    color:'#565656'
+                }
+            },
+            radius:70
+        },
+        series: [{
+            name: '',
+            type: 'radar',
+            data : [
+                {
+                    value : [4, 5, 2, 4, 3, 4],
+                    name : '数据对比',           
+                }
+            ],
+            areaStyle: {
+                normal: {
+                    opacity: 0.6,
+                    color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [
+                        {
+                            color: '#edb60c',
+                            offset: 0
+                        },
+                        {
+                            color: '#edb60c',
+                            offset: 1
+                        }
+                    ])
+                }
+            },
+            itemStyle:{
+                normal:{
+                    color: "#f6a229" //图标颜色
+                }
+            },
+            lineStyle:{
+                normal:{
+                    width:1,  //连线粗细
+                    color: "#edb60c"  //连线颜色
+                }
+            }
+        }],
+    };
+    myChart.setOption(option);
+    var myChart1 = echarts.init(document.getElementById('microChart2'));
+    option1 = {
+        title: {
+            text: ''
+        },
+        tooltip: {},
+        radar: {
+            // shape: 'circle',
+            indicator: [
+               { name: '热门度', max: 5},
+               { name: '性价比', max: 5},
+               { name: '传播力', max: 5},
+               { name: '覆盖度', max: 5},
+               { name: '互动性', max: 5},
+               { name: '知名度', max: 5}
+            ],
+            name: {
+                textStyle: {
+                    color:'#565656'
+                }
+            },
+            radius:70
+        },
+        series: [{
+            name: '',
+            type: 'radar',
+            data : [
+                {
+                    value : [4, 5, 2, 4, 3, 4],
+                    name : '数据对比',           
+                }
+            ],
+            areaStyle: {
+                normal: {
+                    opacity: 0.6,
+                    color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [
+                        {
+                            color: '#edb60c',
+                            offset: 0
+                        },
+                        {
+                            color: '#edb60c',
+                            offset: 1
+                        }
+                    ])
+                }
+            },
+            itemStyle:{
+                normal:{
+                    color: "#f6a229" //图标颜色
+                }
+            },
+            lineStyle:{
+                normal:{
+                    width:1,  //连线粗细
+                    color: "#edb60c"  //连线颜色
+                }
+            }
+        }],
+    };
+    myChart1.setOption(option1);
+
+    //软文发稿
+    $(".soft-nav li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".soft-text-all .soft-text-list").eq($(this).index()).show().siblings().hide();
+    }); 
+    $(".soft-top li").bind("hover",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    }); 
+    //蜂效应
+    $(".bee-nav li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".bee-text-all .bee-text-list").eq($(this).index()).show().siblings().hide();
+    }); 
+    //媒介专家
+     $(".specialist-list").bind("hover",function(){
+        $(this).toggleClass("active");
+    }); 
+	//成功案例
+	$(".successful-ul li").bind("mousemove",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".successful-text-all .successful-text-list").eq($(this).index()).show().siblings().hide();
+    }); 
+    $(".link-img li").bind("hover",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    }); 
+</script>
 <!-- script end -->
 </body>
 </html>
