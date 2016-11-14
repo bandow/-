@@ -2747,8 +2747,14 @@
         $(".bee-text-all .bee-text-list").eq($(this).index()).show().siblings().hide();
     }); 
     //媒介专家
-     $(".specialist-list").bind("hover",function(){
-        $(this).toggleClass("active");
+    // $(".specialist-list").bind("hover",function(){
+    //     $(this).toggleClass("active");
+    // }); 
+    $(".specialist-list").bind("mousemove",function(){
+        $(this).addClass("active");
+    }); 
+    $(".specialist-list").bind("mouseout",function(){
+        $(this).removeClass("active");
     }); 
 	//成功案例
 	$(".successful-ul li").bind("mousemove",function(){
