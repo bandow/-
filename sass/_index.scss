@@ -662,17 +662,6 @@
                             }
                     	}
                     }
-                    a{
-                    	margin:0 auto;
-                    	display:block;
-                    	width:86px;
-                    	height:30px;
-                        background-color:#ffbe17;
-                        font:13px/30px "Microsoft YaHei","Helvetica Neue";
-                        color:#000;
-                        text-align:center;
-                        text-decoration:none;
-                    }
 				}
 			}
 			.list-bottom{
@@ -708,16 +697,6 @@
                 			}
                     	}
                     }
-                    a{
-                    	margin:20px auto 0;
-                    	display:block;
-                    	width:86px;
-                        border:1px solid #ffbe17;
-                        font:13px/1.5 "Microsoft YaHei","Helvetica Neue";
-                        color:#ffbe17;
-                        text-align:center;
-                        text-decoration:none;
-                    }
                     .more{
                     	margin-top:10px;
                     	width:148px;
@@ -733,6 +712,21 @@
                     }
 				}
 			}
+			a{
+            	margin:20px auto 0;
+            	display:block;
+            	width:86px;
+            	height:30px;
+                background-color:#ffbe17;
+                font:13px/30px "Microsoft YaHei","Helvetica Neue";
+                color:#000;
+                text-align:center;
+                text-decoration:none;
+                &:hover{
+                	background-color:#000;
+                	color:#fff;
+                }
+            }
 		}
 	}
 }
@@ -804,6 +798,10 @@
 						    color: #000;
 						    text-align: center;
 						    text-decoration: none;
+						    &:hover{
+			                	background-color:#000;
+			                	color:#fff;
+			                }
 						}
 					}
 					.microChart{
@@ -860,6 +858,10 @@
                         color:#434343;
                         text-align:center;
                         text-decoration:none;
+                        &:hover{
+		                	background-color:#000;
+		                	color:#fff;
+		                }
                     }
                     .more{
                     	margin-top:10px;
@@ -872,6 +874,9 @@
 					    background-position: -415px 0;
 					    &:hover{
 					    	background-position: -415px -183px;
+					    	border-radius:100%;
+					    	width:181px;
+                    	    height:181px;
 					    }
                     }
 				}
