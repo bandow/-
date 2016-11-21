@@ -658,6 +658,23 @@ table {
         width: 200px;
         text-align: center;
         padding: 20px 10px; }
+        .WeChat-promotion .WeChat-text-all .WeChat-text-list .list-bottom li .headImg {
+          position: relative;
+          margin: 0 auto;
+          width: 45px;
+          height: 45px;
+          border-radius: 100%; }
+          .WeChat-promotion .WeChat-text-all .WeChat-text-list .list-bottom li .headImg i {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 13px;
+            height: 13px;
+            background: url("../images/head_icon01.png") center center no-repeat; }
+          .WeChat-promotion .WeChat-text-all .WeChat-text-list .list-bottom li .headImg img {
+            width: 100%;
+            border-radius: 100%; }
         .WeChat-promotion .WeChat-text-all .WeChat-text-list .list-bottom li h3 {
           font: bold 16px/1.5 "Microsoft YaHei","Helvetica Neue";
           color: #515151; }
@@ -732,8 +749,30 @@ table {
       .Micro-blog .Micro-text-all .Micro-text-list .Micro-top li {
         width: 50%;
         float: left; }
-        .Micro-blog .Micro-text-all .Micro-text-list .Micro-top li img {
-          float: left; }
+        .Micro-blog .Micro-text-all .Micro-text-list .Micro-top li .handImg {
+          position: relative;
+          float: left;
+          width: 182px;
+          height: 182px;
+          border: 5px solid #fff;
+          border-radius: 100%; }
+          .Micro-blog .Micro-text-all .Micro-text-list .Micro-top li .handImg i {
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+            display: block;
+            width: 28px;
+            height: 28px;
+            border: 3px solid #fff;
+            background-color: #ffa200;
+            border-radius: 100%;
+            font: bold 20px/1 "Microsoft YaHei","Helvetica Neue";
+            color: #fff;
+            text-align: center; }
+          .Micro-blog .Micro-text-all .Micro-text-list .Micro-top li .handImg img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%; }
         .Micro-blog .Micro-text-all .Micro-text-list .Micro-top li .name {
           float: left;
           width: 140px;
@@ -773,8 +812,30 @@ table {
         width: 200px;
         text-align: center;
         padding: 20px 10px; }
-        .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li img {
-          width: 80px; }
+        .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li .handImg {
+          position: relative;
+          margin: 0 auto;
+          width: 80px;
+          height: 80px;
+          border: 3px solid #fff;
+          border-radius: 100%; }
+          .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li .handImg i {
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            display: block;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #fff;
+            background-color: #ffa200;
+            border-radius: 100%;
+            font: bold 10px/.9 "Microsoft YaHei","Helvetica Neue";
+            color: #fff;
+            text-align: center; }
+          .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li .handImg img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%; }
         .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li h3 {
           font: bold 16px/1.5 "Microsoft YaHei","Helvetica Neue";
           color: #515151; }
@@ -871,26 +932,26 @@ table {
       .soft-wen .soft-text-all .soft-text-list .soft-top .active .img {
         border: 2px solid #ffbe17;
         margin: -1px; }
-    .soft-wen .soft-text-all .soft-text-list .soft-bottom {
-      margin-top: 20px;
-      height: auto;
+  .soft-wen .div-soft-bottom .soft-bottom {
+    margin-top: 20px;
+    height: auto;
+    overflow: hidden;
+    width: 100%; }
+    .soft-wen .div-soft-bottom .soft-bottom li {
+      float: left;
+      width: 300px;
+      text-align: center;
+      padding: 10px;
       overflow: hidden;
-      width: 100%; }
-      .soft-wen .soft-text-all .soft-text-list .soft-bottom li {
-        float: left;
-        width: 300px;
-        text-align: center;
-        padding: 10px;
-        overflow: hidden;
-        text-align: center;
-        vertical-align: middle; }
-        .soft-wen .soft-text-all .soft-text-list .soft-bottom li a {
-          text-decoration: none;
-          color: #000; }
-          .soft-wen .soft-text-all .soft-text-list .soft-bottom li a img {
-            vertical-align: middle;
-            max-width: 100%;
-            max-height: 100%; }
+      text-align: center;
+      vertical-align: middle; }
+      .soft-wen .div-soft-bottom .soft-bottom li a {
+        text-decoration: none;
+        color: #000; }
+        .soft-wen .div-soft-bottom .soft-bottom li a img {
+          vertical-align: middle;
+          max-width: 100%;
+          max-height: 100%; }
 
 .bee-effect {
   width: 100%;
@@ -1285,6 +1346,23 @@ table {
       text-align: center;
       margin: 20px 21px;
       padding: 10px 0; }
+      .WeChat-text-list .promotion li .headImg {
+        position: relative;
+        margin: 0 auto;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%; }
+        .WeChat-text-list .promotion li .headImg i {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          display: block;
+          width: 13px;
+          height: 13px;
+          background: url("../images/head_icon01.png") center center no-repeat; }
+        .WeChat-text-list .promotion li .headImg img {
+          width: 100%;
+          border-radius: 100%; }
       .WeChat-text-list .promotion li h3 {
         font: bold 16px/1.5 "Microsoft YaHei","Helvetica Neue";
         color: #515151; }
@@ -1537,10 +1615,30 @@ table {
         height: auto;
         overflow: hidden;
         margin-bottom: 5px; }
-        .Micro-blog .microblog-container .microblog .left .name img {
+        .Micro-blog .microblog-container .microblog .left .name .handImg {
+          position: relative;
           float: left;
           width: 80px;
-          height: 80px; }
+          height: 80px;
+          border: 3px solid #fff;
+          border-radius: 100%; }
+          .Micro-blog .microblog-container .microblog .left .name .handImg i {
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            display: block;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #fff;
+            background-color: #ffa200;
+            border-radius: 100%;
+            font: bold 10px/.9 "Microsoft YaHei","Helvetica Neue";
+            color: #fff;
+            text-align: center; }
+          .Micro-blog .microblog-container .microblog .left .name .handImg img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%; }
         .Micro-blog .microblog-container .microblog .left .name .text {
           margin-left: 90px; }
         .Micro-blog .microblog-container .microblog .left .name h3 {
