@@ -969,8 +969,7 @@ table {
     margin-top: 20px;
     width: 100%;
     height: auto;
-    overflow: hidden;
-    background: url("../images/bee_bg.jpg") no-repeat; }
+    overflow: hidden; }
     .bee-effect .bee-container .bee-nav {
       float: left;
       padding: 80px 25px; }
@@ -978,13 +977,14 @@ table {
         margin: 10px 0;
         width: 150px;
         font: 18px/60px "Microsoft YaHei","Helvetica Neue";
-        border: 2px solid #fff;
-        color: #fff;
+        border: 1px solid #bfbfbf;
+        background-color: #fff;
+        color: #000;
         text-align: center;
         cursor: pointer; }
       .bee-effect .bee-container .bee-nav .active {
-        color: #354e47;
-        background-color: #fff; }
+        color: #fff;
+        background-color: #bfbfbf; }
     .bee-effect .bee-container .bee-text-all {
       margin-left: 220px; }
       .bee-effect .bee-container .bee-text-all .bee-text-list {
@@ -2295,6 +2295,16 @@ table {
       text-decoration: none;
       color: #363636;
       text-align: right; }
+
+.beeIndexAnalysis {
+  background-color: #e5e5e5;
+  height: auto;
+  overflow: hidden; }
+  .beeIndexAnalysis .Micro-title h3 {
+    border-bottom: 2px solid #e5e5e5; }
+
+.Micro-blog.beeIndexAnalysis .microblog-container {
+  background-color: #e5e5e5; }
 
 .about {
   padding-top: 100px; }
