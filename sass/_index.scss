@@ -557,7 +557,7 @@
 	i{
 		width:40px;
 		height:35px;
-		background:url("../images/wasp.png") -328px 0 no-repeat;
+		background:url("../images/wasp.png") -608px 0 no-repeat;
 		display:inline-block;
 		margin-right: 10px;
 		vertical-align: middle;
@@ -1142,33 +1142,33 @@
                     }
 				}
 				.bee01{
-					background:linear-gradient(-45deg, transparent 2em, #fff 0);
+					background:linear-gradient(-45deg, transparent 2em, #f1f1f1 0);
 					margin:45px 20px 20px 35px;
 				}
 				.bee02{
-					background:linear-gradient(-45deg, transparent 2em, #fff 0);
+					background:linear-gradient(-45deg, transparent 2em, #f1f1f1 0);
 				}
 				.bee03{
-					background:linear-gradient(135deg, transparent 2em, #fff 0);
+					background:linear-gradient(135deg, transparent 2em, #f1f1f1 0);
 					margin:80px 0 20px -30px;
 					padding-left:20px;
 				}
 				.bee04{
-					background:linear-gradient(45deg, transparent 2em, #fff 0);
+					background:linear-gradient(45deg, transparent 2em, #f1f1f1 0);
 					margin:-30px 20px 0 -10px;
 					padding-left:20px;
 				}
 				.bee05{
-					background:linear-gradient(135deg, transparent 2em, #fff 0);
+					background:linear-gradient(135deg, transparent 2em, #f1f1f1 0);
 					margin:-80px 20px 20px 0;
 					padding-left:20px;
 				}
 				.bee06{
-					background:linear-gradient(-135deg, transparent 2em, #fff 0);
+					background:linear-gradient(-135deg, transparent 2em, #f1f1f1 0);
 					margin:0 0 0 5px;
 				}
 				.bee07{
-					background:linear-gradient(45deg, transparent 2em, #fff 0);
+					background:linear-gradient(45deg, transparent 2em, #f1f1f1 0);
 					margin:-60px 0 0 330px;
 					height:auto;
 					padding:10px 30px;
@@ -1192,30 +1192,30 @@
                     }
 				}
 				.active.bee01{
-					background:linear-gradient(-45deg, transparent 2em, #333 0);
+					background:linear-gradient(-45deg, transparent 2em, #8a8a8a 0);
 					margin:45px 20px 20px 35px;
 				}
 				.active.bee02{
-					background:linear-gradient(-45deg, transparent 2em, #333 0);
+					background:linear-gradient(-45deg, transparent 2em, #8a8a8a 0);
 				}
 				.active.bee03{
-					background:linear-gradient(135deg, transparent 2em, #333 0);
+					background:linear-gradient(135deg, transparent 2em, #8a8a8a 0);
 					margin:80px 0 20px -30px;
 				}
 				.active.bee04{
-					background:linear-gradient(45deg, transparent 2em, #333 0);
+					background:linear-gradient(45deg, transparent 2em, #8a8a8a 0);
 					margin:-30px 20px 0 -10px;
 				}
 				.active.bee05{
-					background:linear-gradient(135deg, transparent 2em, #333 0);
+					background:linear-gradient(135deg, transparent 2em, #8a8a8a 0);
 					margin:-80px 20px 20px 0;
 				}
 				.active.bee06{
-					background:linear-gradient(-135deg, transparent 2em, #333 0);
+					background:linear-gradient(-135deg, transparent 2em, #8a8a8a 0);
 					margin:0 0 0 5px;
 				}
 				.active.bee07{
-					background:linear-gradient(45deg, transparent 2em, #333 0);
+					background:linear-gradient(45deg, transparent 2em, #8a8a8a 0);
 					margin:-60px 0 0 330px;
 					height:auto;
 					padding:10px 30px;
@@ -1960,7 +1960,7 @@
 				height:auto;
 			}
 			.left{
-				width:180px;
+				width:160px;
 				float:left;
 				.name{
 					height:auto;
@@ -2034,7 +2034,7 @@
 				float:left;
 			}
 			a{
-				margin:200px auto 0;
+				margin:220px auto 0;
 			    display: block;
 			    width:100px;
 			    background-color: #ffb800;
