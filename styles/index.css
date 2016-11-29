@@ -132,6 +132,10 @@ table {
     .footer .footer-bottom p {
       color: #666;
       font: 14px/1.2 "Microsoft YaHei","Helvetica Neue"; }
+      .footer .footer-bottom p a {
+        color: #666;
+        font: 14px/1.2 "Microsoft YaHei","Helvetica Neue";
+        text-decoration: none; }
     .footer .footer-bottom a {
       text-decoration: none;
       margin: 15px 2px;
@@ -160,7 +164,7 @@ table {
       right: 0;
       background-color: #fff;
       padding: 10px 20px;
-      width: 384px;
+      width: 300px;
       height: 360px;
       overflow: hidden; }
       .banner .login .login-container ul {
@@ -208,7 +212,7 @@ table {
             background-repeat: no-repeat; }
           .banner .login .login-container .login-list .form .input-list input {
             float: left;
-            width: 280px;
+            width: 210px;
             height: 100%;
             background: none;
             border: none;
@@ -229,13 +233,13 @@ table {
           background-position: -134px 0; }
         .banner .login .login-container .login-list .form .btn {
           margin-top: 20px;
-          width: 344px;
+          width: 260px;
           height: auto;
           overflow: hidden; }
           .banner .login .login-container .login-list .form .btn a {
             float: left;
             display: block;
-            width: 162px;
+            width: 120px;
             text-decoration: none;
             text-align: center;
             font: 16px/46px "Microsoft YaHei","Helvetica Neue"; }
@@ -1362,7 +1366,7 @@ table {
 .back-top {
   position: fixed;
   top: 300px;
-  right: 50px;
+  right: 10px;
   z-index: 2;
   background: rgba(249, 185, 10, 0.5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7ff9b90a,endColorstr=#7ff9b90a); }
