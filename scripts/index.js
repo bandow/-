@@ -2,6 +2,8 @@ $(function(){
    //banner幻灯片-begin
     var mySwiper = new Swiper('.swiper-container', {
 		autoplay: 5000,//可选选项，自动滑动
+		pagination: '.swiper-pagination',
+        paginationClickable: true
 	});
     //login登录-begin
     $(".login-container ul li").each(function(index,element){
