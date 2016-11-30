@@ -828,6 +828,9 @@
 						h3{
 							font:18px/2 "Microsoft YaHei","Helvetica Neue";
 							color:#565656;
+						    overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
 						}
 						dl{
 							height: auto;
@@ -1048,6 +1051,11 @@
 			}
 		}
 	}
+}
+.bee-effect-index{
+    .bee-container{
+        background:url("../images/bee_bg.jpg") no-repeat; 
+    }
 }
 .bee-effect{
 	width:100%;
