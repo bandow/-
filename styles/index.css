@@ -566,7 +566,7 @@ table {
 .Micro-title i {
   width: 40px;
   height: 35px;
-  background: url("../images/wasp.png") -608px 0 no-repeat;
+  background: url("../images/wasp.png") -329px 0 no-repeat;
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle; }
@@ -737,7 +737,7 @@ table {
     margin-top: 20px;
     width: 100%;
     height: auto;
-    background: url("../images/live_telecast_bg.png") no-repeat; }
+    background: url("../images/successful_bg.jpg") no-repeat; }
   .Micro-blog .Micro-nav {
     width: 918px;
     height: auto;
@@ -968,6 +968,13 @@ table {
 
 .bee-effect-index .bee-container {
   background: url("../images/bee_bg.jpg") no-repeat; }
+  .bee-effect-index .bee-container .bee-nav li {
+    border: 1px solid #fff !important;
+    background: transparent !important; }
+  .bee-effect-index .bee-container .bee-nav .active {
+    color: #363636 !important;
+    background-color: #fff !important;
+    border: 1px solid #fff !important; }
 
 .bee-effect {
   width: 100%;
@@ -1036,9 +1043,9 @@ table {
               margin-top: 5px;
               display: block;
               width: 74px;
-              border: 1px solid #ffbe17;
+              border: 1px solid #ff9c00;
               font: 12px/1.5 "Microsoft YaHei","Helvetica Neue";
-              color: #ffbe17;
+              color: #ff9c00;
               text-align: center;
               text-decoration: none; }
           .bee-effect .bee-container .bee-text-all .bee-content .bee-content-list h2 {
