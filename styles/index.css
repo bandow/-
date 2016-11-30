@@ -1156,6 +1156,7 @@ table {
     transition: all .5s; }
     .specialist .reverse p {
       padding: 10px 10px 10px 10px;
+      height: 360px;
       font: 14px/1.5 "Microsoft YaHei","Helvetica Neue";
       color: #363636; }
   .specialist .active .reverse {
