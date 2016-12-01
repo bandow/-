@@ -768,7 +768,8 @@
 		margin-top: 20px;
 		width:100%;
 		height:auto;
-		background:url("../images/successful_bg.jpg") no-repeat;
+		background:url("../images/successful_bg02.jpg") no-repeat;
+		background-size: 100% 100%;
 	}
 	.Micro-nav{
 		width:918px;
@@ -828,7 +829,7 @@
 						margin:40px 0 0 10px;
 						h3{
 							font:18px/2 "Microsoft YaHei","Helvetica Neue";
-							color:#565656;
+							color:#000;
 						    overflow: hidden;
                             text-overflow: ellipsis;
                             white-space: nowrap;
@@ -902,8 +903,9 @@
                         }
 					}
 					h3{
-						font:bold 16px/1.5 "Microsoft YaHei","Helvetica Neue";
-						color:#515151;
+					    margin-bottom:10px;
+						font:16px/1.5 "Microsoft YaHei","Helvetica Neue";
+						color:#000;
 					}
 					.name{
                     	margin-top:10px;
@@ -918,7 +920,7 @@
                     		float:left;
                     		width:60px;
                     		p{
-                    			font:14px/1.2 "Microsoft YaHei","Helvetica Neue";
+                    			font:14px/1.5 "Microsoft YaHei","Helvetica Neue";
                     			color:#434343;
                     			text-align:center;
                     		}
@@ -929,12 +931,12 @@
                     	}
                     }
                     a{
-                    	margin:20px auto 0;
+                    	margin:10px auto 0;
                     	display:block;
                     	width:70px;
                         border:1px solid #434343;
                         font:13px/1.5 "Microsoft YaHei","Helvetica Neue";
-                        color:#434343;
+                        color:#000;
                         text-align:center;
                         text-decoration:none;
                         &:hover{

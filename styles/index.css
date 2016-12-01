@@ -59,18 +59,18 @@ table {
   background: -o-linear-gradient(top, #dadada, #f4f4f4); }
   .header .logo {
     float: left;
-    margin-top: 17px;
+    margin-top: 30px;
     font-size: 0; }
     .header .logo img {
-      width: 100%;
+      width: 80%;
       height: auto; }
   .header .nav {
-    margin-left: 245px; }
+    margin-left: 205px; }
     .header .nav li {
       float: left; }
       .header .nav li a {
         display: block;
-        width: 137px;
+        width: 142px;
         height: 112px;
         text-align: center;
         text-decoration: none;
@@ -737,7 +737,8 @@ table {
     margin-top: 20px;
     width: 100%;
     height: auto;
-    background: url("../images/successful_bg.jpg") no-repeat; }
+    background: url("../images/successful_bg02.jpg") no-repeat;
+    background-size: 100% 100%; }
   .Micro-blog .Micro-nav {
     width: 918px;
     height: auto;
@@ -789,7 +790,7 @@ table {
           margin: 40px 0 0 10px; }
           .Micro-blog .Micro-text-all .Micro-text-list .Micro-top li .name h3 {
             font: 18px/2 "Microsoft YaHei","Helvetica Neue";
-            color: #565656;
+            color: #000;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap; }
@@ -850,8 +851,9 @@ table {
             height: 100%;
             border-radius: 100%; }
         .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li h3 {
-          font: bold 16px/1.5 "Microsoft YaHei","Helvetica Neue";
-          color: #515151; }
+          margin-bottom: 10px;
+          font: 16px/1.5 "Microsoft YaHei","Helvetica Neue";
+          color: #000; }
         .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li .name {
           margin-top: 10px;
           height: auto;
@@ -864,19 +866,19 @@ table {
             float: left;
             width: 60px; }
             .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li .name dd p {
-              font: 14px/1.2 "Microsoft YaHei","Helvetica Neue";
+              font: 14px/1.5 "Microsoft YaHei","Helvetica Neue";
               color: #434343;
               text-align: center; }
             .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li .name dd .num {
               font-weight: bold;
               color: #000; }
         .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li a {
-          margin: 20px auto 0;
+          margin: 10px auto 0;
           display: block;
           width: 70px;
           border: 1px solid #434343;
           font: 13px/1.5 "Microsoft YaHei","Helvetica Neue";
-          color: #434343;
+          color: #000;
           text-align: center;
           text-decoration: none; }
           .Micro-blog .Micro-text-all .Micro-text-list .Micro-bottom li a:hover {
