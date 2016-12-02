@@ -420,9 +420,9 @@ table {
         cursor: pointer; }
       .live-telecast .live-top ul .live-telecast-list i {
         width: 38px;
-        height: 35px;
+        height: 40px;
         display: inline-block;
-        background: url("../images/wasp.png") -170px -37px no-repeat;
+        background: url("../images/wasp.png") -298px -40px no-repeat;
         vertical-align: middle;
         margin-right: 10px; }
       .live-telecast .live-top ul .video i {
@@ -437,7 +437,7 @@ table {
         border-bottom: 0;
         font: bold 30px/60px "Microsoft YaHei","Helvetica Neue"; }
       .live-telecast .live-top ul .active.live-telecast-list i {
-        background: url("../images/wasp.png") -170px 0 no-repeat; }
+        background: url("../images/wasp.png") -262px -40px no-repeat; }
       .live-telecast .live-top ul .active.video i {
         background: url("../images/wasp.png") -220px 0 no-repeat; }
   .live-telecast .live-text .live-text-list {
@@ -542,7 +542,7 @@ table {
   .title h3 {
     position: absolute;
     left: 40px;
-    top: -35px;
+    bottom: -2px;
     width: 230px;
     height: 70px;
     font: bold 30px/70px "Microsoft YaHei","Helvetica Neue";
@@ -1253,7 +1253,7 @@ table {
       .successful .successful-ul li .i-list3 {
         background-position: -302px -416px; }
       .successful .successful-ul li .i-list4 {
-        background-position: -347px -416px;
+        background-position: -484px -416px;
         width: 40px; }
       .successful .successful-ul li .i-list5 {
         background-position: -402px -416px; }
@@ -1279,7 +1279,7 @@ table {
       .successful .successful-ul .active .i-list3 {
         background-position: -302px -461px; }
       .successful .successful-ul .active .i-list4 {
-        background-position: -347px -461px;
+        background-position: -484px -461px;
         width: 40px; }
       .successful .successful-ul .active .i-list5 {
         background-position: -402px -461px; }
