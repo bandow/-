@@ -19,7 +19,7 @@
 <!-- header begin -->
 <div class="header">
     <div class="w">
-    	<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    	<div class="logo"><a href="index.html"><img src="images/big_logo.png" alt=""></a></div>
     	<div class="nav">
     		<ul>
     			<li><a href="video.html">直播/短视频</a></li>
@@ -2694,8 +2694,10 @@
     $(window).scroll(function(){
     	 if($("body").scrollTop()==0){
     	 	$(".header").removeClass("headerActive");
+    	 	$(".header .logo img").attr("src","images/big_logo.png");
     	 }else if($("body").scrollTop()>0){
     	 	$(".header").addClass("headerActive");
+    	 	$(".header .logo img").attr("src","images/logo.png");
     	 }    
     });
     //nav

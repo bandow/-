@@ -1,6 +1,6 @@
 .header{
 	width:100%;
-	height:94px;
+	height:112px;
 	filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#cfcfcf,endcolorstr=#f5f5f5,gradientType=0);
     -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#cfcfcf,endcolorstr=#f5f5f5,gradientType=0);/*IE8*/	
     background:url(../images/header_bg.png) repeat-x; /* 一些不支持背景渐变的浏览器 */  
@@ -23,11 +23,11 @@
     		a{
     			display:block;
     			width:142px;
-    			height:94px;
+    			height:112px;
     			text-align:center;
     			text-decoration:none;
     			color:#363636;
-    			font:18px/94px "Microsoft YaHei","Helvetica Neue";
+    			font:18px/112px "Microsoft YaHei","Helvetica Neue";
     		}
     	}
     	.active{
@@ -47,10 +47,10 @@
     height:66px;
     .logo{
         float:left;
-        margin-top:15px;
+        margin-top:5px;
         font-size:0;
         img{
-            width:70%;
+            width:100%;
             height:auto;
         }
     }

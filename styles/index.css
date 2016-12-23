@@ -48,7 +48,7 @@ table {
 
 .header {
   width: 100%;
-  height: 94px;
+  height: 112px;
   filter: alpha(opacity=100 finishopacity=50 style=1 startx=0, starty=0, finishx=0, finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#cfcfcf,endcolorstr=#f5f5f5,gradientType=0);
   -ms-filter: alpha(opacity=100 finishopacity=50 style=1 startx=0, starty=0, finishx=0, finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#cfcfcf,endcolorstr=#f5f5f5,gradientType=0);
   /*IE8*/
@@ -71,11 +71,11 @@ table {
       .header .nav li a {
         display: block;
         width: 142px;
-        height: 94px;
+        height: 112px;
         text-align: center;
         text-decoration: none;
         color: #363636;
-        font: 18px/94px "Microsoft YaHei","Helvetica Neue"; }
+        font: 18px/112px "Microsoft YaHei","Helvetica Neue"; }
     .header .nav .active {
       background-color: #454545; }
       .header .nav .active a {
@@ -90,10 +90,10 @@ table {
   height: 66px; }
   .headerActive .logo {
     float: left;
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 0; }
     .headerActive .logo img {
-      width: 70%;
+      width: 100%;
       height: auto; }
   .headerActive .nav {
     margin-left: 205px; }
@@ -1452,7 +1452,8 @@ table {
             height: 1px;
             background-color: #ffbe17; }
         .successful .new-successful-text-all > div .content .r p {
-          font: 16px/24px "Microsoft YaHei","Helvetica Neue"; }
+          font: 16px/24px "Microsoft YaHei","Helvetica Neue";
+          color: #555; }
           .successful .new-successful-text-all > div .content .r p a {
             float: right;
             font: 14px/24px "Microsoft YaHei","Helvetica Neue";
@@ -1497,7 +1498,7 @@ table {
                 .successful .new-successful-text-all > div .content .r .rR .list ul li h4 {
                   font: 22px/24px "Microsoft YaHei","Helvetica Neue";
                   text-align: center;
-                  color: #000; }
+                  color: #555; }
         .successful .new-successful-text-all > div .content .r .rB {
           margin-top: 50px;
           float: left;
@@ -1509,7 +1510,8 @@ table {
             .successful .new-successful-text-all > div .content .r .rB dl dd {
               float: left;
               width: 33.3333%;
-              font: 14px/40px "Microsoft YaHei","Helvetica Neue"; }
+              font: 14px/40px "Microsoft YaHei","Helvetica Neue";
+              color: #555; }
               .successful .new-successful-text-all > div .content .r .rB dl dd i {
                 float: left;
                 width: 40px;
@@ -1919,7 +1921,8 @@ table {
           height: 1px;
           background-color: #ffbe17; }
       .WeChat-success-container .new-successful-text-all > div .content .r p {
-        font: 16px/24px "Microsoft YaHei","Helvetica Neue"; }
+        font: 16px/24px "Microsoft YaHei","Helvetica Neue";
+        color: #555; }
         .WeChat-success-container .new-successful-text-all > div .content .r p a {
           float: right;
           font: 14px/24px "Microsoft YaHei","Helvetica Neue";
@@ -1960,11 +1963,11 @@ table {
               .WeChat-success-container .new-successful-text-all > div .content .r .rR .list ul li p {
                 font: 14px/24px "Microsoft YaHei","Helvetica Neue";
                 text-align: center;
-                color: #3b3b3b; }
+                color: #555; }
               .WeChat-success-container .new-successful-text-all > div .content .r .rR .list ul li h4 {
                 font: 22px/24px "Microsoft YaHei","Helvetica Neue";
                 text-align: center;
-                color: #000; }
+                color: #555; }
       .WeChat-success-container .new-successful-text-all > div .content .r .rB {
         margin-top: 50px;
         float: left;
@@ -1976,7 +1979,8 @@ table {
           .WeChat-success-container .new-successful-text-all > div .content .r .rB dl dd {
             float: left;
             width: 33.3333%;
-            font: 14px/40px "Microsoft YaHei","Helvetica Neue"; }
+            font: 14px/40px "Microsoft YaHei","Helvetica Neue";
+            color: #555; }
             .WeChat-success-container .new-successful-text-all > div .content .r .rB dl dd i {
               float: left;
               width: 40px;
