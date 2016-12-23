@@ -40,9 +40,9 @@
 	<div class="banner">
 	    <div class="swiper-container">
 		    <div class="swiper-wrapper">
-			    <div class="swiper-slide"><img src="images/banner01.jpg" alt=""></div>
-			    <div class="swiper-slide"><img src="images/banner01.jpg" alt=""></div>
-			    <div class="swiper-slide"><img src="images/banner01.jpg" alt=""></div>
+			    <div class="swiper-slide"><img height="450" src="images/banner01.jpg" alt=""></div>
+			    <div class="swiper-slide"><img height="450" src="images/banner01.jpg" alt=""></div>
+			    <div class="swiper-slide"><img height="450" src="images/banner01.jpg" alt=""></div>
 		    </div>
 		    <div class="swiper-pagination"></div>
 		</div>
@@ -2515,17 +2515,17 @@
 	    		</ul>
 	    		<div class="new-successful-text-all">
 	    			<div class="successful-text-list" style="display:block;">
-                       <h2>小熊电器</h2>
+                       <!-- <h2>项目概述</h2> -->
                        <div class="content">
                        	  <div class="l"><img src="images/rL01.jpg" alt=""></div>
                        	  <div class="r">
                        	  	 <h3>项目概述<i></i></h3>
                        	  	 <p class="pText">
                        	  	 <span>结合小熊电器赞助综艺节目《穿越吧厨房》这一背景，在微博展开以“小熊穿越吃吃吃为主题的送礼活动，通过转发微博，获得赠礼，与生活美食KOL合作，通过大量转发互动，成功引爆活动热度，再以“穿越灵魂美食”为主题，探讨自己心中的灵魂美食，通过KOL之间的互动，植入产品和品牌信息……</span>
-                       	  	 <span style="display:none;">
+                       	  	 <!-- <span style="display:none;">
                        	  	 	结合小熊电器赞助综艺节目《穿越吧厨房》这一背景，在微博展开以“小熊穿越吃吃吃为主题的送礼活动，通过转发微博，获得赠礼，与生活美食KOL合作，通过大量转发互动，成功引爆活动热度，再以“穿越灵魂美食”为主题，探讨自己心中的灵魂美食，通过KOL之间的互动，植入产品和品牌信息结合小熊电器赞助综艺节目《穿越吧厨房》这一背景，在微博展开以“小熊穿越吃吃吃为主题的送礼活动，通过转发微博，获得赠礼，与生活美食KOL合作，通过大量转发互动，成功引爆活动热度，再以“穿越灵魂美食”为主题，探讨自己心中的灵魂美食，通过KOL之间的互动，植入产品和品牌信息。
                        	  	 </span>
-                       	  	 <a onclick="showText()" href="javascript:;">展开查看更多∨</a>
+                       	  	 <a onclick="showText()" href="javascript:;">展开查看更多∨</a> -->
                        	  	 </p>
                        	  	 <div class="rL">
                        	  	 	<h3>案例亮点<i></i></h3>
@@ -2690,6 +2690,14 @@
 <script src="scripts/lib/echarts.min.js"></script>
 <script src="scripts/index.js"></script>
 <script>
+    //滚动
+    $(window).scroll(function(){
+    	 if($("body").scrollTop()==0){
+    	 	$(".header").removeClass("headerActive");
+    	 }else if($("body").scrollTop()>0){
+    	 	$(".header").addClass("headerActive");
+    	 }    
+    });
     //nav
 	$(".nav li").bind("mousemove",function(){
         $(this).addClass("active");
@@ -3030,16 +3038,16 @@
         $(this).addClass("active").siblings().removeClass("active");
         $(".new-successful-text-all .successful-text-list").eq($(this).index()).show().siblings().hide();
     });
-    function showText(){
-      $(".pText span").eq(0).hide();   
-      $(".pText span").eq(1).show(); 
-      $(".pText a").text("收缩详情∧").attr("onclick","hideText()");  
-    }
-    function hideText(){
-    	$(".pText span").eq(0).show();   
-        $(".pText span").eq(1).hide(); 
-        $(".pText a").text("展开查看更多∨").attr("onclick","showText()");
-    }
+    // function showText(){
+    //   $(".pText span").eq(0).hide();   
+    //   $(".pText span").eq(1).show(); 
+    //   $(".pText a").text("收缩详情∧").attr("onclick","hideText()");  
+    // }
+    // function hideText(){
+    // 	$(".pText span").eq(0).show();   
+    //     $(".pText span").eq(1).hide(); 
+    //     $(".pText a").text("展开查看更多∨").attr("onclick","showText()");
+    // }
 </script>
 <!-- script end -->
 </body>
