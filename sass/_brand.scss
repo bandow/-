@@ -1,0 +1,631 @@
+@import "base", "header","footer";
+.contarner{
+	width:100%;
+    height:auto;
+    overflow:hidden;
+}
+.brand{
+	width:100%;
+	height:auto;
+	background-color:#fff;
+	overflow:hidden;
+	.brand-top{
+		position:relative;
+		padding:30px 0;
+		margin:0 auto;
+		width:1168px;
+		.text{
+			position:absolute;
+			top:90px;
+			left:0;
+			right:0;
+			bottom:0;
+			h2{
+				font:36px/2  "Microsoft YaHei","Helvetica Neue";
+				color:#fff;
+				text-align:center;
+			}
+			p{
+				font:16px/1.5  "Microsoft YaHei","Helvetica Neue";
+				color:#fff;
+				text-align:center;
+			}
+			a{
+				margin:48px auto 0;
+				display:block;
+				width:172px;
+				height:58px;
+				border:1px solid #fff;
+				font:16px/58px "Microsoft YaHei","Helvetica Neue";
+				color:#fff;
+				text-align:center;
+				text-decoration:none;
+			}
+		}
+	}
+	.brand-foot{
+		padding:40px 0 80px;
+		>h2{
+			font:36px/1.5  "Microsoft YaHei","Helvetica Neue";
+			color:#010101;
+			text-align:center;
+		}
+		>p{
+			font:18px/2  "Microsoft YaHei","Helvetica Neue";
+			color:#333;
+			text-align:center;
+		}
+		ul{
+			padding:60px 0 40px;
+			margin:0 auto;
+			width:810px;
+			height: auto;
+			overflow: hidden;
+			li{
+				float: left;
+				width:270px;
+				text-align:center;
+				h3{
+					font:24px/2  "Microsoft YaHei","Helvetica Neue";
+					color:#333;
+					text-align:center;
+				}
+				p{
+					font:12px/1.5  "Microsoft YaHei","Helvetica Neue";
+					color:#333;
+					text-align:center;
+				}
+			}
+		}
+		.img{
+			margin:50px auto;
+			width:925px;
+		}
+	}
+}
+.me-link{
+	padding:70px 0 20px;
+	width:100%;
+	height:auto;
+	background-color:#f7f7f7;
+	overflow:hidden;
+	h2{
+		font:36px/1.5  "Microsoft YaHei","Helvetica Neue";
+		color:#010101;
+		text-align:center;
+	}
+	p{
+		font:18px/2  "Microsoft YaHei","Helvetica Neue";
+		color:#333;
+		text-align:center;
+	}
+	.link-list{
+		position:relative;
+		padding-top:50px;
+		margin:0 auto;
+		width:948px;
+		ul{
+			position:absolute;
+			top:90px;
+			li{
+				margin-bottom: 10px;
+				// border:1px solid red;
+				float:left;
+				width:158px;
+			    height: 80px;
+				a{
+					display:block;
+					width:100%;
+					height:100%;
+				}
+			}
+		}
+	}
+	.we-media-list{
+		margin:50px auto;
+		width:1280px;
+		height:auto;
+		overflow: hidden;
+		ul{
+			li{
+				position:relative;
+				float:left;
+				width:256px;
+				height:364px;
+				.text{
+					position:absolute;
+					top:28px;
+					right:0;
+					bottom:0;
+					left:0;
+					text-align:center;
+					h3{
+						margin:25px 0;
+						font:26px/2 "Microsoft YaHei","Helvetica Neue";
+						color:#fff;
+					}
+					p{
+						font:14px/2 "Microsoft YaHei","Helvetica Neue";
+						color:#fff;
+					}
+					a{
+						margin:50px auto 0;
+						width:140px;
+						height:44px;
+						font:18px/2 "Microsoft YaHei","Helvetica Neue";
+						color:#fff;
+						border:1px solid #fff;
+						display:block;
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+}
+.cooperation{
+	padding:80px 0;
+	width:100%;
+	height:auto;
+	background-color:#fff;
+	overflow:hidden;
+	>h2{
+		font:36px/1.5  "Microsoft YaHei","Helvetica Neue";
+		color:#010101;
+		text-align:center;
+	}
+	>p{
+		font:18px/2  "Microsoft YaHei","Helvetica Neue";
+		color:#333;
+		text-align:center;
+	}
+	ul{
+		padding-top:50px;
+		margin:0 auto;
+		width:912px;
+		height: auto;
+		overflow: hidden;
+		li{
+			margin:0 20px;
+			float:left;
+			width:264px;
+			h4{
+				margin:0 auto;
+				width:150px;
+				height:30px;
+				font:16px/30px  "Microsoft YaHei","Helvetica Neue";
+				color:#333;
+				text-align:center;
+				background:#fdd427;
+			}
+			.text{
+				padding:40px 30px;
+				margin-top:20px;
+				height:300px;
+				border:1px solid #010101;
+				text-align:center;
+				.img{
+					width:100%;
+					height:115px;
+					margin-bottom:10px;
+				    vertical-align: middle;
+    				display: table-cell;
+					img{
+						width:100%;
+					}
+				}
+				.img3{
+					height:115px;
+					margin-bottom:10px;
+				}
+				p{
+					text-align:left;
+					font:12px/1.5 "Microsoft YaHei","Helvetica Neue";
+					color:#333;
+				}
+			}
+		}
+	}
+	.we-list{
+		margin:0 auto;
+		width:840px;
+		height: auto;
+		overflow: hidden;
+		li{
+			margin:40px 15px;
+			float:left;
+			width:138px;
+			display: inline-block;
+		    -webkit-box-sizing: border-box;
+		    box-sizing: border-box;
+		    padding: 20px 0 36px;
+		    -webkit-box-shadow: 0 15px 40px rgba(0,0,0,.09);
+		    box-shadow: 0 15px 40px rgba(0,0,0,.09);
+		    .img{
+		    	display: block;
+			    margin: 0 auto;
+			    width: 80px;
+			    height:80px;
+			    border-radius: 100%;
+			    font-size:0;
+			    overflow:hidden;
+			    img{
+			    	width:100%;
+			    	height:100%;
+			    }
+		    }
+		    p{
+		    	font:16px/2  "Microsoft YaHei","Helvetica Neue";
+			    margin-top: 25px;
+			    font-weight: 400;
+			    text-align:center;
+		    }
+		}
+	}
+}
+.influence{
+	padding:70px 0 100px;
+	width:100%;
+	height:auto;
+	background-color:#f7f7f7;
+	overflow:hidden;
+	>h2{
+		font:36px/1.5  "Microsoft YaHei","Helvetica Neue";
+		color:#010101;
+		text-align:center;
+	}
+	>p{
+		font:18px/2  "Microsoft YaHei","Helvetica Neue";
+		color:#333;
+		text-align:center;
+	}
+	>h4{	
+		margin:40px auto 20px;
+		width:100px;
+		height:30px;
+		font:16px/30px "Microsoft YaHei","Helvetica Neue";
+		color:#333;
+		text-align:center;
+		background:#fdd427;	
+	}
+	>ul{
+		padding-top:50px;
+		margin:0 auto;
+		width:768px;
+		height: auto;
+		overflow: hidden;
+		li{
+			margin:0 23px;
+			float:left;
+			width:146px;
+			.img{
+				width:100%;
+				img{
+					width:100%;
+				}
+			}
+		}
+	}
+	.media{
+		position:relative;
+		margin:0 auto;
+		width:730px;
+		.list-top{
+			position:absolute;
+			top:20px;
+			left:40px;
+			li{
+				float:left;
+				width:130px;
+				height:50px;
+				// border:1px solid red;
+				a{
+					display:block;
+					width:100%;
+					height:100%;
+				}
+			}
+		}
+		.list-bottom{
+			position:absolute;
+			top:70px;
+		    left:160px;
+			li{
+				float:left;
+				width:100px;
+				height:50px;
+				// border:1px solid red;
+				a{
+					display:block;
+					width:100%;
+					height:100%;
+				}
+			}
+			.li4{
+				width:150px;
+			}
+		}
+	}
+	.we-media-case{
+		padding-top:50px;
+		padding-bottom:80px;
+		margin:0 auto;
+		width:1024px;
+		height: auto;
+		overflow: hidden;
+		li{
+			margin:0 20px;
+			float:left;
+			width:268px;
+			h4{
+				margin:40px auto 20px;
+				width:120px;
+				height:30px;
+				font:16px/30px "Microsoft YaHei","Helvetica Neue";
+				color:#333;
+				text-align:center;
+				background:#fdd427;	
+			}
+			.text{
+				height:325px;
+			    -webkit-box-sizing: border-box;
+			    box-sizing: border-box;
+			    background-color: #fff;
+			    -webkit-box-shadow: 0 28px 62px rgba(0,0,0,.09);
+			    box-shadow: 0 28px 62px rgba(0,0,0,.09);
+			    border-radius: 6px;
+			    padding: 50px 18px 28px;
+			    .img{
+			    	margin:0 auto;
+			    	width:103px;
+			    	height:103px;
+				    display:block;
+				    border-radius:100%;
+				    overflow:hidden;
+				    img{
+				    	width:100%;
+				    	height:100%;
+				    }
+			    }
+			    h5{
+			    	margin-bottom:20px;
+					font:16px/3 "Microsoft YaHei","Helvetica Neue";
+					color:#333;
+					text-align:center;
+			    }
+			    p{
+			    	font:12px/1.5 "Microsoft YaHei","Helvetica Neue";
+					color:#9d9d9d;
+			    }
+			}
+		}
+	}
+	>h3{
+		margin:40px auto 20px;
+		width:180px;
+		height:48px;
+		font:16px/48px  "Microsoft YaHei","Helvetica Neue";
+		color:#333;
+		text-align:center;
+		background:#fdd427;	
+	}
+}
+.mask{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:none;
+	z-index:3;
+	background:#000;
+	filter:alpha(opacity=80);
+	-moz-opacity:.8;
+	opacity:.8;
+}
+.brand-submit{
+	position:fixed;
+	top:50%;
+	left:50%;
+	display:none;
+	z-index:4;
+	padding:20px;
+	width:370px;
+	height:432px;
+	margin:-216px 0 0 -185px;
+	background:#fff;
+	overflow:hidden;
+	border-radius:5px;
+	>button{
+		background:none;
+		border:none;
+		outline:none;
+		margin:0 auto;
+		display:block;
+		width:70%;
+		height:40px;
+		text-align:center;
+		border-radius:5px;
+		background:#fedf5f;
+		background: -webkit-linear-gradient(top, #fedf5f 0%,#e3b806 100%);
+		background: linear-gradient(to bottom, #fedf5f 0%,#e3b806 100%);
+		box-shadow:1px 1px 1px #cca400,-1px 1px 1px #cca400;
+		font:14px/40px "Microsoft YaHei","Helvetica Neue";
+		color:#333;
+		cursor:pointer;
+	}
+}
+.submit-list{
+	.item{
+		width:100%;
+		height:30px;
+		margin-bottom:20px;
+		.img{
+			float:left;
+			margin-right:20px;
+			width:30px;
+			height:30px;
+		    display:table-cell;
+    		vertical-align: middle;
+			img{
+				width:100%;
+			}
+		}
+		p{
+			float:left;
+			width:80px;
+			font:14px/30px "Microsoft YaHei","Helvetica Neue";
+			color:#333;
+		}
+		.p-r{
+			width:auto;
+		}
+		.input-line{
+			float:left;
+			border-bottom:1px solid #999;
+			width:180px;
+			height:26px;
+			input{
+				width:100%;
+				height:100%;
+				background:none;
+				border:none;
+				outline:none;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.back-top{
+	position:fixed;
+	top:300px;
+	right:10px;
+	z-index:2;
+	.qq{
+		 position:relative;
+		 padding:5px 10px 0;
+		 background:rgba(249,185,10,.5);
+	     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7ff9b90a,endColorstr=#7ff9b90a); 
+	     >a{
+		     padding-bottom:50px;
+	     	 width:29px;
+	         height:34px;
+	         display:block;
+	         background-image:url("../images/wasp.png");
+		     background-repeat: no-repeat;
+		     background-position:0 -30px;
+		     border-bottom:1px solid #fff;
+		     text-decoration:none;
+	     }
+	     .list{
+               position:absolute;
+               top:0;
+               right:50px;
+               padding:0 10px;
+               display:none;
+               width:112px;
+               background-color:#464646;
+               ul li{
+               	  text-align:center;
+               	  border-bottom:1px solid #fff;
+               	  overflow:hidden;
+               	  &:last-child{
+               	  	border:none;
+               	  }
+               	  i{
+               	  	margin:15px 10px 0 0;
+               	  	display:block;
+               	  	width:14px;
+               	  	height:16px;
+               	  	background-image:url("../images/wasp.png");
+				    background-repeat: no-repeat;
+				    background-position:-74px -52px;
+				    float:left;
+               	  }
+               	  a{
+               	  	float:left;
+               	  	text-decoration:none;
+               	  	color:#fff;
+               	  	font: 14px/46px "Microsoft YaHei","Helvetica Neue";
+               	  }
+               }
+               ul .on{
+               	i{
+                  background-position:-91px -52px;
+               	}
+               	a{
+               		color:#fdd427;
+               	}
+               }
+               &:before{
+               	  content:"";
+               	  position:absolute;
+               	  top:20px;
+               	  right:-20px;
+               	  width:0;
+               	  height:0;
+               	  border-width: 10px;
+                  border-style: solid;
+               	  border-color:transparent transparent transparent #464646;
+               }
+	     }
+	}
+	.active.qq{
+		background:rgba(249,185,10,.8);
+	    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8f9b90a,endColorstr=#C8f9b90a); 
+	    >a{
+	    	border-bottom:none;
+	    } 
+	    .list{
+	    	display:block;
+	    }  
+	}
+	.top{
+		 background:rgba(249,185,10,.5);
+		 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7ff9b90a,endColorstr=#7ff9b90a); 
+		 overflow:hidden;
+	     a{
+	     	 margin:5px auto;
+	       	 width:32px;
+	         height:19px;
+	         display:block;
+			 background-image:url("../images/wasp.png");
+		     background-repeat: no-repeat;
+		     background-position:-666px 0;
+	     }
+	}
+	.active.top{
+		background:rgba(249,185,10,.8);
+	    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8f9b90a,endColorstr=#C8f9b90a);     
+	}
+}
